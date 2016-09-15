@@ -1,0 +1,5 @@
+#!/bin/sh
+~/xt_sel -geometry 109x27+0-0 &
+~/xt_sel -geometry 108x27-0-0 &
+~/xt_sel -geometry 109x27+0+0 &
+~/xt_sel -geometry 108x27-0+0 &

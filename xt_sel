@@ -1,0 +1,16 @@
+#!/bin/ksh
+
+NUM=$(($RANDOM%7));
+
+((NUM==0)) && xterm $@ -fg "#00e000" &
+((NUM==1)) && xterm $@ -fg DeepSkyBlue &
+((NUM==2)) && xterm $@ -fg cyan &
+((NUM==3)) && xterm $@ -fg LimeGreen &
+((NUM==4)) && xterm $@ -fg Purple &
+((NUM==5)) && xterm $@ -fg MediumSpringGreen &
+((NUM==6)) && xterm $@ -fg SpringGreen &
+
+((NUM==88)) && xterm $@ -fg DeepPink &
+((NUM==99)) && xterm $@ -fg yellow &
+((NUM==98)) && xterm $@ -fg red &
+((NUM==87)) && xterm $@ &

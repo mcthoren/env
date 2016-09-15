@@ -1,0 +1,37 @@
+xterm*scrollBar:	true
+xterm*foreground:	#0080ff
+xterm*background:	black
+xterm*saveLines:	1024
+xterm*loginShell:	true
+#xterm*font:		heb8x13
+xterm*cursorBlink:	true
+xterm*cursorOffTime:	300
+xterm*cursorOnTime:	300
+xterm*alwaysHighlight:	true
+
+xload*foreground:	blue
+xload*background:	black
+xload*showLabel:	false
+xload*highlight:	darkred
+xload*update:		3
+
+xclock*foreground:	red
+xclock*background:	black
+xclock*highlight:	red
+xclock*hands:		red
+xclock*update:		1
+xclock*padding:		0
+xclock*render:		false
+
+xbiff*foreground:	green
+xbiff*background:	black
+
+rxvt*background:	black
+rxvt*foreground:	#0080ff
+rxvt*saveLines:		1024
+rxvt*loginShell:	true
+#rxvt*scrollstyle:	xterm
+#rxvt*multichar_encoding:	gb
+#rxvt*scrollBar_floating:	false
+
+#xvkbd.noSync: true

@@ -1,0 +1,24 @@
+#!/bin/ksh
+
+NUM=$(($RANDOM%5));
+
+NUM=99
+
+((NUM==0)) && xlock -mode bug -eyes 
+((NUM==1)) && xlock -mode life 
+((NUM==2)) && xlock -mode maze 
+((NUM==3)) && xlock -mode pyro 
+((NUM==4)) && xlock -mode grav 
+
+((NUM==5)) && xlock -mode galaxy 
+((NUM==6)) && xlock -mode fadeplot 
+((NUM==7)) && xlock -mode ifs 
+((NUM==8)) && xlock -mode strange 
+((NUM==9)) && xlock -mode thornbird 
+
+((NUM==99)) && {
+	xlock -mode blanck
+	# xlock -mode blanck &
+	# sleep 6
+	# xset dpms force standby
+}

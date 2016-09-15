@@ -1,0 +1,328 @@
+#IconPath /usr/local/share/pixmaps/fvwm/
+IconPath /usr/X11R6/include/X11/pixmaps/
+
+EdgeResistance 0 0
+EdgeScroll 100 100
+ClickTime 750
+
+# make sure these fonts exist on your system:
+WindowFont -adobe-times-bold-r-*-*-14-*-*-*-*-*-*-*
+IconFont -adobe-helvetica-bold-r-*-*-10-*-*-*-*-*-*-*
+
+HilightColor #bebebe #006090
+MenuStyle #4d4d4d #bebebe #e7e7e7 -adobe-times-bold-r-*-*-12-*-*-*-*-*-*-* fvwm
+
+DeskTopSize 5x5
+
+ColormapFocus FollowsMouse
+
+# default Styles:
+Style "*"           BorderWidth 7, HandleWidth 7
+Style "*"           Icon unknown1.xpm, Color #bebebe/#004070
+Style "*"           MWMFunctions, MWMDecor, HintOverride
+Style "*"           DecorateTransient, NoPPosition
+Style "*"           IconBox 0 -10 -280 -1
+Style "*"           FocusFollowsMouse
+Style "*"           RandomPlacement, SmartPlacement
+
+# Styles for various Fvwm modules:
+Style "Fvwm*"       NoTitle,  Sticky, WindowListSkip
+Style "Fvwm*"       BorderWidth 2, CirculateSkipIcon, CirculateSkip
+Style "FvwmPager"   StaysOnTop
+Style "FvwmBanner"  StaysOnTop
+Style "FvwmButtons" Icon toolbox.xpm, ClickToFocus
+
+# Styles for your common terminal emulator programs:
+AddToDecor terms
++ ButtonStyle 1 Pixmap mini.xterm.xpm
++ HilightColor #bebebe #0070f0
+Style "XTerm"       UseDecor terms
+Style "XTerm"       Icon xterm.xpm, SloppyFocus, IconBox -70 1 -1 -140
+
+# Styles for various common programs:
+Style "*lock"       NoTitle, NoHandles, Sticky, WindowListSkip, ClickToFocus
+Style "xbiff"       NoTitle, Sticky, WindowListSkip, ClickToFocus
+Style "xcalc"       Icon xcalc.xpm, NoButton 2,RandomPlacement,ClickToFocus
+Style "xmag"	    Icon mag_glass.xpm, RandomPlacement, ClickToFocus
+
+# some simple default key bindings:
+Key Next         A       SCM     Next [*] Focus
+Key Prior        A       SCM     Prev [*] Focus
+
+# some simple default mouse bindings:
+#   for the root window:
+Mouse 3	R   	A       Menu RootMenu Nop
+Mouse 2	R    	A      	Menu Window-Ops Nop
+Mouse 1	R    	A      	WindowList
+
+#   for the title bar buttons:
+Mouse 0	1    	A      	Menu Window-Ops2 Close
+Mouse 0	2    	A     	Maximize-Func
+Mouse 0	4    	A     	Iconify
+
+#   for other parts of the window/borders/icons:
+Mouse 1	F	A	Resize-or-Raise
+Mouse 1	TS	A	Move-or-Raise
+Mouse 1	I	A	Move-or-Iconify
+Mouse 2	I	A	Iconify
+Mouse 2	FST	A	Menu Window-Ops2 Nop
+Mouse 3	TSIF	A	RaiseLower
+
+Mouse 4 A       C       Desk -1 
+Mouse 5 A       C       Desk 1 
+
+Mouse 4 T       N       Next-and-Goto-Deski 
+Mouse 5 T       N       Next-and-Goto-Desko 
+
+######################## Initialization Functions ############################
+AddToFunc InitFunction 	  "I" Module FvwmButtons
++			  "I" ChangeDefaultFocus FocusFollowsMouse
+			   exec feh --bg-fill bglink.png
+
+AddToFunc RestartFunction "I" Module FvwmButtons
++			  "I" ChangeDefaultFocus FocusFollowsMouse
+			   exec feh --bg-fill bglink.png
+
+
+
+######################## Menus ###################
+AddToMenu RootMenu	"Root Menu"	Title
++			"XTerm%mini.xterm.xpm%"		Exec exec xterm
++                       "XLock%mini.xlock.xpm%"         Exec exec xlock -mode pyro
++			"Console"	Module  FvwmConsole
++			"Window-Ops2"	Popup Window-Ops2
++			""		Nop
++		      	"Restart Fvwm%mini.refresh.xpm%"	    Restart
++                       "Exit"  Module FvwmForm QuitVerify
+
+AddToMenu Window-Ops2	"&Move%mini.move.xpm%"		Move
++			"&Resize%mini.resize.xpm%"	Resize
++			"R&aise%mini.raise.xpm%"	Raise   	
++			"&Lower%mini.lower.xpm%"	Lower   	
++			"(De)&Iconify%mini.iconify.xpm%"	Iconify 	
++			"(Un)&Stick%mini.stick2.xpm%"	Stick		
++                       "(Un)Ma&ximize%mini.maximize.xpm%" Maximize
++			""		Nop     	
++			"&Delete%mini.excl.xpm%"	Delete	
++			"&Close%mini.cut.xpm%"	Close
++			"Destroy%mini.destroy.xpm%"	Destroy 	
++			""		Nop
++			"ScrollBar" 	Module FvwmScroll 2 2	
++			"Print"         PrintFunction
+#+                       "Print Reverse" PrintReverseFunction
+
+######################## Sample Functions ##########################
+
+AddToFunc MailFunction	   "I" Next [$0] Iconify -1
++		           "I" Next [$0] Focus
++			   "I" None [$0] Exec $0 $1
+
+AddToFunc Move-or-Raise		"I" Raise
++				"M" Move
++  				"D" Lower
+
+AddToFunc Move-or-Raise2	"M" Raise
++				"M" Move
++  				"D" Lower
+
+AddToFunc Maximize-Func		"M" Maximize	 0 100
++				"C" Maximize	 0 80
++				"D" Maximize	 100 100
+
+AddToFunc Move-or-Iconify	"I" Raise
++				"M" Move
++				"D" Iconify
+
+AddToFunc Resize-or-Raise	"I" Raise
++				"M" Resize
++				"D" Lower
+
+AddToFunc Resize-or-Raise2	"M" Raise
++				"M" Resize
++				"D" Lower
+
+AddToFunc PrintFunction		"I" Raise
++				"I" Exec xdpr -id $w
+
+AddToFunc PrintReverseFunction  "I" Raise
++                               "I" Exec xdpr 1/2 -h -rv -id $w
+
+AddToFunc Iconify-and-Raise     "I" Iconify
++                               "I" Raise
+
+AddToFunc Next-and-Goto-Deski   "I" MoveToDesk -1
++                               "I" Desk -1
+
+AddToFunc Next-and-Goto-Desko   "I" MoveToDesk 1
++                               "I" Desk 1
+
+AddToFunc FocusAndWarp "I" Focus
++                      "I" WarpToWindow 2p 2p
+
+AddToFunc DeiconifyFocusAndWarp "I" Iconify -1
++                               "I" FocusAndWarp
+
+AddToFunc ChangeDefaultFocus "I" Style "*" $0
++                            "I" Recapture
+
+############################################################################ 
+# Now some keyboard shortcuts. 
+ 
+IgnoreModifiers L25
+# Arrow Keys 
+# press arrow + control + meta anywhere, and scroll by 1 page 
+Key Left	A	CM	Scroll -100 0 
+Key Right	A	CM	Scroll +100 +0 
+Key Up		A	CM	Scroll +0   -100 
+Key Down	A	CM	Scroll +0   +100 
+ 
+# press arrow + meta key, and scroll by 1/10 of a page 
+Key Left	A	M	Scroll -10 +0 
+Key Right	A	M	Scroll +10 +0 
+Key Up		A	M	Scroll +0   -10 
+Key Down	A	M	Scroll +0   +10 
+ 
+# press shift arrow + control anywhere, and move the pointer by 1% of a page 
+Key Left	A	SC	CursorMove -1 0 
+Key Right	A	SC	CursorMove +1 +0 
+Key Up		A	SC	CursorMove +0   -1 
+Key Down	A	SC	CursorMove +0   +1 
+ 
+# press shift arrow + meta key, and move the pointer by 1/10 of a page 
+Key Left	A	SM	CursorMove -10 +0 
+Key Right	A	SM	CursorMove +10 +0 
+Key Up		A	SM	CursorMove +0   -10 
+Key Down	A	SM	CursorMove +0   +10 
+
+# press arrow + control page up/dwn home end
+Key Left	A	C	exec xvkbd -xsendevent -text "\[Home]" 
+Key Right	A	C	exec xvkbd -xsendevent -text "\[End]"
+Key Up		A	C	exec xvkbd -xsendevent -text "\[Prior]"
+Key Down	A	C	exec xvkbd -xsendevent -text "\[Next]"
+Key BackSpace	A	C	exec xvkbd -xsendevent -text "\[Delete]"
+ 
+# Keyboard accelerators 
+Key F1		A	M	Menu RootMenu
+Key F2		A	M	Menu Window-Ops
+Key F3		A	M	WindowList FvwmWinList  
+Key F4		A	M	Iconify 
+Key F5		A	M	Move 
+Key F6		A	M	Resize 
+Key F7		A	M	CirculateUp 
+Key F8		A	M	CirculateDown 
+Key F9		A	C	exec mixerctl outputs.master=-5,-5
+Key F10		A	C	exec mixerctl outputs.master=+5,+5
+Key F11		A	C	exec wsconsctl display.backlight=0
+Key F12		A	C	exec wsconsctl display.backlight=100
+
+Key 1           A       M       Move +0 +0
+Key 2           A       M       Move -0 +0
+Key 3           A       M       Move -0 -0
+Key 4           A       M       Move +0 -0
+
+Key 2		A	C	exec ~/xt_sel
+Key 3		A	C	exec dillo
+Key 4		A	C	exec ~/xt_sel -geometry 222x56+0+0
+Key 5		A	C	exec xlock -mode flag
+Key 6		A	C	exec pkill -SIGUSR1 xidle
+Key 7		A	C	exec ~/xt_sel -geometry 109x56+0+0
+Key 8		A	C	exec ~/xt_sel -geometry 108x56-0+0
+Key 9		A	C	exec ~/2x2
+
+Key Next	A	C	Desk -1 
+Key Prior	A	C	Desk 1 
+ 
+#Page Up/Dapge Down keys are used to scroll by one desktop page 
+# in any context, press page up/down + control 
+# in root context, just pressing page up/down is OK 
+#  
+# I prefer the non-wrapping scroll. These are for example purposes only 
+#Key Next	A       C       Scroll 100000 0 
+#Key Next	R       N       Scroll 100000 0   
+#Key Prior	A       C       Scroll -100000 0 
+#Key Prior	R       N       Scroll -100000 0 
+
+################## FvwmButtons button-bar ################################
+*FvwmButtonsGeometry 176x75-1-1
+*FvwmButtonsBack black 
+*FvwmButtons(Frame 2 Padding 2 2 Container(Rows 2 Columns 2 Frame 1 Padding 10 0))
+*FvwmButtons(1x2 Frame 0 Container(Rows 2 Columns 2 Frame 0))
+*FvwmButtons(Frame 2 Swallow(UseOld,NoHints,Respawn) "xbiff" `Exec exec xbiff -file  /home/ghz/nsmail/Inbox -bg "#000000" -fg green`)
+*FvwmButtons(Frame 3 Swallow(UseOld,NoHints,Respawn) "xclock" `Exec exec xclock -norender -bg "#000000" -fg red -hd red -hl red -padding 0 -update 1`)
+*FvwmButtons(2x1 Frame 2 Swallow(UseOld,NoHints,Respawn) "xload" `Exec exec xload -bg "#000000" -fg blue -hl red -update 2 -nolabel`)
+*FvwmButtons(End)
+#*FvwmButtons(1x2 Frame 2 Swallow(UseOld) "FvwmPager" "Module FvwmPager 0 0")
+*FvwmButtons(1x2 Frame 2 Swallow(UseOld) "FvwmPager" "Module FvwmPager * *")
+*FvwmButtons(End)
+
+
+########################### Pager #########################################
+*FvwmPagerFont -adobe-helvetica-bold-r-*-*-10-*-*-*-*-*-*-*
+*FvwmPagerBack darkblue
+*FvwmPagerFore white
+*FvwmPagerHilight #2d2d2d
+*FvwmPagerGeometry 80x60-1-1
+#*FvwmPagerLabel 0 OpenBSD\ 4.1
+#*FvwmPagerLabel 1 Maker
+#*FvwmPagerLabel 2 Mail
+#*FvwmPagerLabel 3 Matlab
+*FvwmPagerSmallFont 5x8
+
+############################################################
+*FvwmIconBoxIconBack    #cfcfcf
+*FvwmIconBoxIconHiFore  black
+*FvwmIconBoxIconHiBack  LightSkyBlue
+*FvwmIconBoxBack        #5f9ea0
+#*FvwmIconBoxFore       blue
+*FvwmIconBoxGeometry    5x1+0+0
+*FvwmIconBoxMaxIconSize 64x38
+*FvwmIconBoxFont        -adobe-helvetica-medium-r-*-*-12-*-*-*-*-*-*-*
+*FvwmIconBoxSortIcons   IconName
+*FvwmIconBoxPadding     4
+*FvwmIconBoxLines       10
+*FvwmIconBoxSBWidth     11
+*FvwmIconBoxPlacement   Left Top
+*FvwmIconBoxPixmap      fvwm.xpm
+#*FvwmIconBoxHideSC Horizontal
+*FvwmIconBoxSetWMIconSize
+*FvwmIconBoxHilightFocusWin
+#*FvwmIconBoxResolution          Desk
+*FvwmIconBoxMouse       1       Click           RaiseLower
+*FvwmIconBoxMouse       1       DoubleClick     Iconify
+*FvwmIconBoxMouse       2       Click           Iconify -1, Focus
+*FvwmIconBoxMouse       3       Click           Module FvwmIdent
+*FvwmIconBoxKey         r       RaiseLower
+*FvwmIconBoxKey         space   Iconify
+*FvwmIconBoxKey         d       Close
+*FvwmIconBoxKey         n       Next
+*FvwmIconBoxKey         p       Prev
+*FvwmIconBoxKey         h       Left
+*FvwmIconBoxKey         j       Down
+*FvwmIconBoxKey         k       Up
+*FvwmIconBoxKey         l       Right
+#
+# Icon file specifications
+#
+# Mostly, you don't have to specify icon files, as FvwmIconBox now
+# reads icon files specified in Style commands.
+#
+*FvwmIconBox            "Fvwm*"         -
+
+# FvwmForm alias - query exit ala mwm
+*QuitVerifyGrabServer
+*QuitVerifyWarpPointer
+*QuitVerifyFont          *helvetica*m*r*n*14*
+#*QuitVerifyButtonFont    *helvetica*m*o*n*14*
+*QuitVerifyButtonFont    7x13bold
+*QuitVerifyFore          Black
+*QuitVerifyBack          Light Gray
+*QuitVerifyItemFore Wheat
+*QuitVerifyItemBack Gray50
+# begin items
+*QuitVerifyLine          center
+*QuitVerifyText          "Do you really want to exit FVWM?"
+*QuitVerifyLine          expand
+*QuitVerifyButton   quit      " Exit "
+*QuitVerifyCommand  Quit
+*QuitVerifyButton   quit      "Cancel"
+*QuitVerifyCommand  Nop
