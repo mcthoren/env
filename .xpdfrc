@@ -1,0 +1,2 @@
+urlCommand "/bin/echo %s >> /tmp/url_dump_file"
+initialZoom width
