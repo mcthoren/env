@@ -28,5 +28,5 @@ alias cl="cal `date +%Y`"
 rw () { cat /usr/share/dict/words |perl -e 'rand $. < 1 && ($x = $_) while <>; print $x' ;}
 rl () { perl -e 'rand $. < 1 && ($x = $_) while <>; print $x' ;}
 
-PS1="[%n@%m:%~]$ "
+PS1="[%n@%m %1~]$ "
 EDITOR=vi
