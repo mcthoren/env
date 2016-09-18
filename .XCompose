@@ -1,4 +1,4 @@
-# from https://github.com/kragen/xcompose/blob/master/dotXCompose
+# mostly from https://github.com/kragen/xcompose/blob/master/dotXCompose
 include "%L"
 <Multi_key> <Multi_key> <s> <u> <m>		: "∑"	U2211		# N-ARY SUMMATION
 <Multi_key> <Multi_key> <i> <n> <t>		: "∫"	U222B		# INTEGRAL
@@ -26,6 +26,5 @@ include "%L"
 <Multi_key> <Multi_key> <z> <a> <p>		: "⚡"	U26A1		# HIGH VOLTAGE SIGN 
 <Multi_key> <Multi_key> <r> <a> <d>		: "☢"	U2622		# RADIOACTIVE SIGN
 <Multi_key> <Multi_key> <b> <h>			: "☣"	U2623		# BIOHAZARD SIGN
-<Multi_key> <Multi_key> <b> <i> <o> <h>	<a> <z>	: "☣"	U2623		# BIOHAZARD SIGN
-<Multi_key> <O> <X>				: "☠"	U2620		# SKULL AND CROSSBONES
+<Multi_key> <Multi_key> <o> <x>			: "☠"	U2620		# SKULL AND CROSSBONES
 <Multi_key> <Multi_key> <f> <l>			: "⏥"	U23E5		# FLATNESS
