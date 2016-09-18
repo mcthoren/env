@@ -2,6 +2,7 @@
 the idea here, is that when i work on a new machine i can do:
 
 git clone git@github.com:mcthoren/env.git
+
 ln -s ~/env/[2x]* ~/env/.[fXxz]* ./
 
 in my home dir, and then have exactly the same env i have everywhere.
