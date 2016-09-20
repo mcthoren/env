@@ -10,6 +10,11 @@ NUM=$(($RANDOM%7));
 ((NUM==5)) && XTARGS="-fg MediumSpringGreen"
 ((NUM==6)) && XTARGS="-fg SpringGreen"
 
+((NUM==88)) && XTARGS="-fg DeepPink"
+((NUM==99)) && XTARGS="-fg yellow"
+((NUM==98)) && XTARGS="-fg red"
+((NUM==87)) && XTARGS=""
+
 # i don't set shell var at work, cuz it's in ldap, and few other workstations have it installed.
 if [ `hostname -s` = "ep117" ]; then
 	xterm $@ $XTARGS `which zsh` &
