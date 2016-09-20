@@ -2,15 +2,17 @@
 
 NUM=$(($RANDOM%7));
 
-((NUM==0)) && xterm $@ -fg "#00e000" &
-((NUM==1)) && xterm $@ -fg DeepSkyBlue &
-((NUM==2)) && xterm $@ -fg cyan &
-((NUM==3)) && xterm $@ -fg LimeGreen &
-((NUM==4)) && xterm $@ -fg Purple &
-((NUM==5)) && xterm $@ -fg MediumSpringGreen &
-((NUM==6)) && xterm $@ -fg SpringGreen &
+((NUM==0)) && XTARGS="-fg #00e000"
+((NUM==1)) && XTARGS="-fg DeepSkyBlue"
+((NUM==2)) && XTARGS="-fg cyan"
+((NUM==3)) && XTARGS="-fg LimeGreen"
+((NUM==4)) && XTARGS="-fg #FF20FF"
+((NUM==5)) && XTARGS="-fg MediumSpringGreen"
+((NUM==6)) && XTARGS="-fg SpringGreen"
 
-((NUM==88)) && xterm $@ -fg DeepPink &
-((NUM==99)) && xterm $@ -fg yellow &
-((NUM==98)) && xterm $@ -fg red &
-((NUM==87)) && xterm $@ &
+# i don't set shell var at work, cuz it's in ldap, and few other workstations have it installed.
+if [ `hostname -s` = "ep117" ]; then
+	xterm $@ $XTARGS `which zsh` &
+else
+	xterm $@ $XTARGS &
+fi
