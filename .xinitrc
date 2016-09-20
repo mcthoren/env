@@ -12,7 +12,6 @@ xplanet -gmtlabel -projection rectangular -date_format '%F %T %Z' &
 if [ `hostname -s` = "ep117" ]; then
 
 	xset dpms 600
-	xset r rate 150 50
 
 	xautolock -time 4 -locker /home/ep117/mcdole/xl_sel &
 
