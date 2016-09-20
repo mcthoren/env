@@ -3,7 +3,7 @@ xterm*foreground:	#0080ff
 xterm*background:	black
 xterm*saveLines:	1024
 xterm*loginShell:	true
-#xterm*font:		heb8x13
+!xterm*font:		heb8x13
 xterm*cursorBlink:	true
 xterm*cursorOffTime:	300
 xterm*cursorOnTime:	300
@@ -30,8 +30,8 @@ rxvt*background:	black
 rxvt*foreground:	#0080ff
 rxvt*saveLines:		1024
 rxvt*loginShell:	true
-#rxvt*scrollstyle:	xterm
-#rxvt*multichar_encoding:	gb
-#rxvt*scrollBar_floating:	false
+!rxvt*scrollstyle:	xterm
+!rxvt*multichar_encoding:	gb
+!rxvt*scrollBar_floating:	false
 
-#xvkbd.noSync: true
+!xvkbd.noSync: true
