@@ -6,7 +6,16 @@ unsetopt beep
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/ghz/.zshrc'
+
+if [ `hostname -s` = "ep117" ]; then
+	zstyle ':completion:*' completer _complete _ignored
+	zstyle :compinstall filename '/home/ep117/mcdole/.zshrc'
+	PYTHONPATH=/home/ep117/mcdole/dr_guo/py_libs/:/home/ep117/mcdole/dr_guo/planetotools/:/home/ep117/mcdole/dr_guo/RoverState/
+	MSL_CHARGED_DIR=/home/ep117/mcdole/dr_guo/MSL/
+	export PYTHONPATH MSL_CHARGED_DIR
+else
+	zstyle :compinstall filename '/home/ghz/.zshrc'
+fi
 
 autoload -Uz compinit
 compinit
