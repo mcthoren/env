@@ -1,5 +1,4 @@
 cd 
-DISPLAY=:0
 
 export LC_CTYPE="en_US.UTF-8"
 xset r rate 150 50
@@ -11,6 +10,7 @@ xplanet -gmtlabel -projection rectangular -date_format '%F %T %Z' &
 # work is an ubuntu machine with some weirdness to it
 if [ `hostname -s` = "ep117" ]; then
 
+	DISPLAY=:0
 	xset dpms 600
 
 	xautolock -time 4 -locker /home/ep117/mcdole/xl_sel &
