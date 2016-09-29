@@ -1,11 +1,10 @@
-# Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 unsetopt beep
+setopt rmstarsilent
+setopt extended_glob
 bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
 
 if [ `hostname -s` = "ep117" ]; then
 	zstyle ':completion:*' completer _complete _ignored
@@ -19,7 +18,6 @@ fi
 
 autoload -Uz compinit
 compinit
-# End of lines added by compinstall
 
 alias mp='mplayer -cache 8192'
 alias map='mplayer -cache-min 50 -af volnorm -loop 0 -playlist'
