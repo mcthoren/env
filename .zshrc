@@ -5,6 +5,8 @@ unsetopt beep
 setopt rmstarsilent
 setopt extended_glob
 setopt hist_ignore_dups
+setopt no_check_jobs
+setopt no_hup
 bindkey -e
 
 if [ `hostname -s` = "ep117" ]; then
