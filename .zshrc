@@ -4,6 +4,7 @@ SAVEHIST=1000
 unsetopt beep
 setopt rmstarsilent
 setopt extended_glob
+setopt hist_ignore_dups
 bindkey -e
 
 if [ `hostname -s` = "ep117" ]; then
