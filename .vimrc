@@ -27,3 +27,10 @@ map \T <Esc>:set noexpandtab tabstop=8 shiftwidth=8 softtabstop=8<CR>
 
 " sometimes i also work with human languages
 map <f2> <Esc>:set textwidth=80 <CR> gggqG<CR>
+
+map <f3> <Esc>:setlocal spell spelllang=de_DE<CR> 
+map <f4> <Esc>:setlocal spell spelllang=us_EN<CR> 
+map <f5> <Esc>:!aspell --lang=en -c %<CR> 
+map <f6> <Esc>:!aspell --lang=de -c %<CR> 
+map <f7> <Esc>:!aspell --lang=en --mode=tex -c %<CR> 
+map <f8> <Esc>:!aspell --lang=de --mode=tex -c %<CR> 
