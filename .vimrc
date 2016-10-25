@@ -25,5 +25,5 @@ set softtabstop=8
 map \t <Esc>:set expandtab tabstop=4 shiftwidth=4 softtabstop=4<CR>
 map \T <Esc>:set noexpandtab tabstop=8 shiftwidth=8 softtabstop=8<CR>
 
-# sometimes i also work with human languages
+" sometimes i also work with human languages
 map <f2> <Esc>:set textwidth=80 <CR> gggqG<CR>
