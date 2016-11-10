@@ -2,6 +2,11 @@ let loaded_matchparen = 1
 set noincsearch
 set nohlsearch
 
+" turn off annoying beeping and flashing. ffs.
+set noerrorbells
+set visualbell
+set t_vb=
+
 scriptencoding utf-8
 set encoding=utf-8
 
