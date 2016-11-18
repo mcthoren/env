@@ -27,7 +27,7 @@ NUM=$(($RANDOM%5));
 ((NUM==62)) && echo "shell test"
 
 ((NUM==99)) && {
-	xlock -mode blanck
+	xlock -mode blank
 	# xlock -mode blanck &
 	# sleep 6
 	# xset dpms force standby
