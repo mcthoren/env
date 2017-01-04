@@ -9,6 +9,30 @@ setopt no_check_jobs
 setopt no_hup
 bindkey -e
 
+# from http://superuser.com/questions/742171/zsh-z-shell-numpad-numlock-doesnt-work
+# Keypad
+# 0 . Enter
+bindkey -s "^[Op" "0"
+bindkey -s "^[Ol" "."
+bindkey -s "^[OM" "^M"
+# 1 2 3
+bindkey -s "^[Oq" "1"
+bindkey -s "^[Or" "2"
+bindkey -s "^[Os" "3"
+# 4 5 6
+bindkey -s "^[Ot" "4"
+bindkey -s "^[Ou" "5"
+bindkey -s "^[Ov" "6"
+# 7 8 9
+bindkey -s "^[Ow" "7"
+bindkey -s "^[Ox" "8"
+bindkey -s "^[Oy" "9"
+# + -  * /
+bindkey -s "^[Ok" "+"
+bindkey -s "^[Om" "-"
+bindkey -s "^[Oj" "*"
+bindkey -s "^[Oo" "/"
+
 if [ `hostname -s` = "ep117" ]; then
 	zstyle ':completion:*' completer _complete _ignored
 	zstyle :compinstall filename '/home/ep117/mcdole/.zshrc'
