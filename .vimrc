@@ -19,6 +19,9 @@ set nocindent
 set nosmartindent
 set indentexpr=
 
+" reset colors in case some clever git set a scheme that janked them
+colorscheme default
+
 scriptencoding utf-8
 set encoding=utf-8
 
