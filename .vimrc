@@ -1,4 +1,10 @@
+" kill paren matching one way or another
 let loaded_matchparen = 1
+set noshowmatch
+
+" if MatchParen plugin, use this
+"NoMatchParen
+
 set noincsearch
 set nohlsearch
 
