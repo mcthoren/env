@@ -13,6 +13,12 @@ set noerrorbells
 set visualbell
 set t_vb=
 
+" autoindenting can go to hell
+set noautoindent
+set nocindent
+set nosmartindent
+set indentexpr=
+
 scriptencoding utf-8
 set encoding=utf-8
 
