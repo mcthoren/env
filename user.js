@@ -13,3 +13,4 @@ user_pref("browser.search.hiddenOneOffs", "Yahoo,Bing,eBay,Twitter");
 user_pref("browser.search.isUS", false);
 user_pref("browser.search.update", false);
 user_pref("browser.slowStartup.notificationDisabled", true);
+user_pref("browser.tabs.closeWindowWithLastTab", false);
