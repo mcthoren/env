@@ -19,3 +19,4 @@ user_pref("browser.urlbar.suggest.bookmark", false);
 user_pref("browser.urlbar.suggest.history", false);
 user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.userMadeSearchSuggestionsChoice", true);
+user_pref("browser.warnOnQuit", false);
