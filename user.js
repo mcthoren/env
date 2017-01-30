@@ -14,3 +14,8 @@ user_pref("browser.search.isUS", false);
 user_pref("browser.search.update", false);
 user_pref("browser.slowStartup.notificationDisabled", true);
 user_pref("browser.tabs.closeWindowWithLastTab", false);
+user_pref("browser.urlbar.autocomplete.enabled", false);
+user_pref("browser.urlbar.suggest.bookmark", false);
+user_pref("browser.urlbar.suggest.history", false);
+user_pref("browser.urlbar.suggest.openpage", false);
+user_pref("browser.urlbar.userMadeSearchSuggestionsChoice", true);
