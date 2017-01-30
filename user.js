@@ -7,3 +7,8 @@ user_pref("noscript.notify.bottom", false);
 user_pref("noscript.showAddress", true);
 user_pref("noscript.untrusted", "adobedtm.com doubleclick.net facebook.net googl-analytics.com google-analytics.com googleadservices.com ioam.de media.net outbrain.com taboola.com http://adobedtm.com http://doubleclick.net http://facebook.net http://googl-analytics.com http://google-analytics.com http://googleadservices.com http://ioam.de http://media.net http://outbrain.com http://taboola.com https://adobedtm.com https://doubleclick.net https://facebook.net https://googl-analytics.com https://google-analytics.com https://googleadservices.com https://ioam.de https://media.net https://outbrain.com https://taboola.com");
 user_pref("accessibility.typeaheadfind.flashBar", 0);
+user_pref("browser.search.defaultenginename", "DuckDuckGo");
+user_pref("browser.search.defaultenginename.US", "DuckDuckGo");
+user_pref("browser.search.hiddenOneOffs", "Yahoo,Bing,eBay,Twitter");
+user_pref("browser.search.isUS", false);
+user_pref("browser.search.update", false);
