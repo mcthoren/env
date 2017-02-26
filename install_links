@@ -1,0 +1,21 @@
+#!/usr/bin/zsh
+
+to_link=(2x2\
+ .fvwmrc\
+ .vimrc\
+ .XCompose\
+ .Xdefaults\
+ .xinitrc\
+ xl_sel\
+ .xmodmaprc.ep117\
+ .xmodmaprc.iva\
+ .xpdfrc\
+ xt_sel\
+ .zshrc)
+
+cd ~/env/ || exit 1
+cd ~/ || exit 1 
+
+for i in $to_link; do
+	ln -s $i
+done
