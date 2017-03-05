@@ -17,5 +17,5 @@ cd ~/env/ || exit 1
 cd ~/ || exit 1 
 
 for i in $to_link; do
-	ln -s $i
+	ln -s ~/env/$i
 done
