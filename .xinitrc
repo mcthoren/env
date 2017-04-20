@@ -2,6 +2,7 @@ cd
 
 export LC_CTYPE="en_US.UTF-8"
 xset r rate 150 50
+xset b off
 
 xmodmap ~/.xmodmaprc.`hostname -s`
 
