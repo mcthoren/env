@@ -21,3 +21,4 @@ user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.userMadeSearchSuggestionsChoice", true);
 user_pref("browser.warnOnQuit", false);
 user_pref("browser.fixup.dns_first_for_single_words", true);
+user_pref("network.IDN_show_punycoder", true);
