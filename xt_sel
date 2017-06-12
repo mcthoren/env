@@ -9,3 +9,5 @@ NUM=$(($RANDOM%7));
 ((NUM==4)) && XTARGS="-fg #FF20FF"
 ((NUM==5)) && XTARGS="-fg MediumSpringGreen"
 ((NUM==6)) && XTARGS="-fg SpringGreen"
+
+xterm $@ $XTARGS &
