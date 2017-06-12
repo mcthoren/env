@@ -6,7 +6,7 @@ NUM=$(($RANDOM%7));
 ((NUM==1)) && XTARGS="-fg DeepSkyBlue"
 ((NUM==2)) && XTARGS="-fg cyan"
 ((NUM==3)) && XTARGS="-fg LimeGreen"
-((NUM==4)) && XTARGS="-fg #FF20FF"
+((NUM==4)) && XTARGS="-fg darkturquoise"
 ((NUM==5)) && XTARGS="-fg MediumSpringGreen"
 ((NUM==6)) && XTARGS="-fg SpringGreen"
 
