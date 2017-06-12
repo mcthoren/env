@@ -42,12 +42,12 @@ Style "XTerm"       Icon xterm.xpm, SloppyFocus, IconBox -70 1 -1 -140
 # Styles for various common programs:
 Style "*lock"       NoTitle, NoHandles, Sticky, WindowListSkip, ClickToFocus
 Style "xbiff"       NoTitle, Sticky, WindowListSkip, ClickToFocus
-Style "xcalc"       Icon xcalc.xpm, NoButton 2,RandomPlacement,ClickToFocus
-Style "xmag"	    Icon mag_glass.xpm, RandomPlacement, ClickToFocus
+# Style "xcalc"       Icon xcalc.xpm, NoButton 2,RandomPlacement,ClickToFocus
+# Style "xmag"	    Icon mag_glass.xpm, RandomPlacement, ClickToFocus
 
 # some simple default key bindings:
-Key Next         A       SCM     Next [*] Focus
-Key Prior        A       SCM     Prev [*] Focus
+# Key Next         A       SCM     Next [*] Focus
+# Key Prior        A       SCM     Prev [*] Focus
 
 # some simple default mouse bindings:
 #   for the root window:
