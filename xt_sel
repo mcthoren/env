@@ -1,17 +1,23 @@
 #!/bin/ksh
 
-NUM=$(($RANDOM%11));
+NUM=$(($RANDOM%17));
 
 ((NUM==0)) && XTARGS="-fg #00e000"
 ((NUM==1)) && XTARGS="-fg DeepSkyBlue"
-((NUM==2)) && XTARGS="-fg cyan"
-((NUM==3)) && XTARGS="-fg LimeGreen"
-((NUM==4)) && XTARGS="-fg darkturquoise"
-((NUM==5)) && XTARGS="-fg MediumSpringGreen"
-((NUM==6)) && XTARGS="-fg SpringGreen"
-((NUM==7)) && XTARGS="-fg mediumturquoise"
-((NUM==8)) && XTARGS="-fg skyblue"
-((NUM==9)) && XTARGS="-fg springgreen"
-((NUM==10)) && XTARGS="-fg turquoise"
+((NUM==2)) && XTARGS="-fg DeepSkyBlue1"
+((NUM==3)) && XTARGS="-fg DeepSkyBlue2"
+((NUM==4)) && XTARGS="-fg cyan"
+((NUM==5)) && XTARGS="-fg LimeGreen"
+((NUM==6)) && XTARGS="-fg darkturquoise"
+((NUM==7)) && XTARGS="-fg #00a0ff"
+((NUM==8)) && XTARGS="-fg MediumSpringGreen"
+((NUM==9)) && XTARGS="-fg SpringGreen"
+((NUM==10)) && XTARGS="-fg mediumturquoise"
+((NUM==11)) && XTARGS="-fg skyblue"
+((NUM==12)) && XTARGS="-fg springgreen"
+((NUM==13)) && XTARGS="-fg turquoise"
+((NUM==14)) && XTARGS="-fg green1"
+((NUM==15)) && XTARGS="-fg green2"
+((NUM==16)) && XTARGS="-fg green3"
 
 xterm $@ $XTARGS &
