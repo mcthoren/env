@@ -1,23 +1,10 @@
-#!/bin/ksh
+#!/usr/local/bin/zsh
+# just go with zsh and zsh arrays
 
-NUM=$(($RANDOM%17));
 
-((NUM==0)) && XTARGS="-fg #00e000"
-((NUM==1)) && XTARGS="-fg DeepSkyBlue"
-((NUM==2)) && XTARGS="-fg DeepSkyBlue1"
-((NUM==3)) && XTARGS="-fg DeepSkyBlue2"
-((NUM==4)) && XTARGS="-fg cyan"
-((NUM==5)) && XTARGS="-fg LimeGreen"
-((NUM==6)) && XTARGS="-fg darkturquoise"
-((NUM==7)) && XTARGS="-fg #00a0ff"
-((NUM==8)) && XTARGS="-fg MediumSpringGreen"
-((NUM==9)) && XTARGS="-fg SpringGreen"
-((NUM==10)) && XTARGS="-fg mediumturquoise"
-((NUM==11)) && XTARGS="-fg skyblue"
-((NUM==12)) && XTARGS="-fg springgreen"
-((NUM==13)) && XTARGS="-fg turquoise"
-((NUM==14)) && XTARGS="-fg green1"
-((NUM==15)) && XTARGS="-fg green2"
-((NUM==16)) && XTARGS="-fg green3"
+colors=(\#00e000 DeepSkyBlue DeepSkyBlue1 DeepSkyBlue2 cyan LimeGreen darkturquoise \#00a0ff MediumSpringGreen SpringGreen mediumturquoise skyblue springgreen turquoise green1 green2 green3)
 
-xterm $@ $XTARGS &
+NUM=$(($RANDOM%${#colors}+1));
+COLOR=$colors[$NUM]
+
+xterm $@ -fg $COLOR &
