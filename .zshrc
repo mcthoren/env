@@ -62,3 +62,4 @@ rl () { perl -e 'rand $. < 1 && ($x = $_) while <>; print $x' ;}
 
 PS1="[%n@%m %1~]$ "
 EDITOR=vi
+GIT_EDITOR=vi
