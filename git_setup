@@ -3,6 +3,9 @@
 # geklaut von jmetzger
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cI) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
+# and some reason, for really old git's
+# git config --global alias.lg "log --color --graph --date=iso --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
 # git config --global user.email XXXXXXXXXX@XXXXXX.XXX
 # git config --global user.name mcthoren
 # git config --global push.default simple
