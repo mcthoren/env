@@ -4,6 +4,7 @@ NUM=$(($RANDOM%5));
 
 [ `hostname -s` = "ep117" ] && NUM=22
 [ `hostname -s` = "iva" ] && NUM=99
+[ `hostname -s` = "bolt" ] && NUM=99
 
 ((NUM==0)) && xlock -mode bug -eyes 
 ((NUM==1)) && xlock -mode life 
