@@ -28,5 +28,12 @@ else
 
 	xidle -program ~/xl_sel -timeout 256 &
 
-	exec fvwm
+	[ `hostname -s` = "socket" ] && {
+		mixer mic 10:10
+		mixer pcm 80:80
+		mixer monitor 40:40
+		mixer vol 90:90
+	}
+
+	exec fvwm2
 fi
