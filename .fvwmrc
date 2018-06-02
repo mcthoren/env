@@ -225,8 +225,8 @@ Key 3		A	C	exec dillo
 Key 4		A	C	exec ~/xt_sel -geometry 222x56+0+0
 Key 5		A	C	exec xlock -mode flag
 Key 6		A	C	exec pkill -SIGUSR1 xidle
-Key 7		A	C	exec ~/xt_sel -geometry 109x56+0+0
-Key 8		A	C	exec ~/xt_sel -geometry 108x56-0+0
+Key 7		A	C	exec ~/2x1 L
+Key 8		A	C	exec ~/2x1 R
 Key 9		A	C	exec ~/2x2
 
 Key Next	A	C	Desk -1 
