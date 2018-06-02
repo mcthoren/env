@@ -1,0 +1,20 @@
+#!/bin/ksh
+
+if [ `hostname -s` = "socket" ]; then
+	LGEOM="111x56+0+0"
+	RGEOM="111x56-0+0"
+else
+	LGEOM="109x56+0+0"
+	RGEOM="108x56-0+0"
+fi
+
+
+(($#==0)) && {
+	~/xt_sel -geometry $LGEOM
+	~/xt_sel -geometry $RGEOM
+}
+
+(($#==1)) && {
+	[ $1 = "L" ] && ~/xt_sel -geometry $LGEOM
+	[ $1 = "R" ] && ~/xt_sel -geometry $RGEOM
+}
