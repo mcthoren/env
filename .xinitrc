@@ -33,6 +33,8 @@ else
 		mixer pcm 80:80
 		mixer monitor 40:40
 		mixer vol 90:90
+		xset fp+ /usr/local/share/fonts/urwfonts
+		xset fp rehash
 	}
 
 	exec fvwm2
