@@ -1,8 +1,6 @@
 #!/usr/bin/zsh
 
-to_link=(2x2\
- 2x1\
- .fvwmrc\
+to_link=(.fvwmrc\
  .vimrc\
  .XCompose\
  .Xdefaults\
