@@ -245,14 +245,11 @@ Key Prior	A	C	Desk 1
 ################## FvwmButtons button-bar ################################
 *FvwmButtonsGeometry 176x75-1-1
 *FvwmButtonsBack black 
-*FvwmButtons(Frame 2 Padding 2 2 Container(Rows 2 Columns 2 Frame 1 Padding 10 0))
-*FvwmButtons(1x2 Frame 0 Container(Rows 2 Columns 2 Frame 0))
-*FvwmButtons(Frame 2 Swallow(UseOld,NoHints,Respawn) "xbiff" `Exec exec xbiff -file  /home/ghz/nsmail/Inbox -bg "#000000" -fg green`)
-*FvwmButtons(Frame 3 Swallow(UseOld,NoHints,Respawn) "xclock" `Exec exec xclock -norender -bg "#000000" -fg red -hd red -hl red -padding 0 -update 1`)
-*FvwmButtons(2x1 Frame 2 Swallow(UseOld,NoHints,Respawn) "xload" `Exec exec xload -bg "#000000" -fg blue -hl red -update 2 -nolabel`)
+*FvwmButtons(Frame 2 Padding 0 0 Container(Rows 2 Columns 2 Frame 1 Padding 0 0))
+*FvwmButtons(2x2 Frame 0 Container(Rows 2 Columns 2 Frame 0))
+*FvwmButtons(2x2 Frame 1 Swallow(UseOld,NoHints,Respawn) "xload" `Exec exec xload -bg "#000000" -fg blue -hl red -update 2 -nolabel`)
 *FvwmButtons(End)
-#*FvwmButtons(1x2 Frame 2 Swallow(UseOld) "FvwmPager" "Module FvwmPager 0 0")
-*FvwmButtons(1x2 Frame 2 Swallow(UseOld) "FvwmPager" "Module FvwmPager * *")
+*FvwmButtons(2x2 Frame 2 Swallow(UseOld) "FvwmPager" "Module FvwmPager * *")
 *FvwmButtons(End)
 
 
