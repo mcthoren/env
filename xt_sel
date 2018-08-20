@@ -1,7 +1,5 @@
 #!/usr/local/bin/zsh
 
-set -x
-
 colors=(\#00e000 DeepSkyBlue DeepSkyBlue1 DeepSkyBlue2 cyan LimeGreen darkturquoise \#00a0ff MediumSpringGreen SpringGreen mediumturquoise skyblue springgreen turquoise green1 green2 green3)
 
 NUM=$(($RANDOM%${#colors}+1));
@@ -14,7 +12,6 @@ xt_sel () {
 		} || {
 			xterm -fg $COLOR -geometry $1 &
 		}
- exit 1
 }
 
 if [ `hostname -s` = "socket" ]; then
@@ -42,9 +39,9 @@ fi
 	[ $1 = "R" ] && xt_sel $RGEOM
 	[ $1 = "F" ] && xt_sel $FULL
 	[ $1 = "T" ] && {
-		xt_sel $TL
-		xt_sel $TR
 		xt_sel $BL
 		xt_sel $BR
+		xt_sel $TL
+		xt_sel $TR
 	}
 }
