@@ -1,10 +1,48 @@
 #!/usr/local/bin/zsh
-# just go with zsh and zsh arrays
-
 
 colors=(\#00e000 DeepSkyBlue DeepSkyBlue1 DeepSkyBlue2 cyan LimeGreen darkturquoise \#00a0ff MediumSpringGreen SpringGreen mediumturquoise skyblue springgreen turquoise green1 green2 green3)
 
-NUM=$(($RANDOM%${#colors}+1));
-COLOR=$colors[$NUM]
+xt_sel () {
 
-xterm $@ -fg $COLOR &
+	NUM=$(($RANDOM%${#colors}+1));
+	COLOR=$colors[$NUM]
+
+	(( $# == 0 )) &&
+		{
+			xterm -fg $COLOR &
+		} || {
+			xterm -fg $COLOR -geometry $1 &
+		}
+}
+
+if [ `hostname -s` = "socket" ]; then
+	LGEOM="111x56+0+0"
+	RGEOM="111x56-0+0"
+	BL="111x26+0-0"
+	BR="111x26-0-0"
+	TL="111x26+0+0"
+	TR="111x26-0+0"
+	FULL="222x56+0+0"
+else
+	LGEOM="109x56+0+0"
+	RGEOM="108x56-0+0"
+	BL="109x27+0-0"
+	BR="108x27-0-0"
+	TL="109x27+0+0"
+	TR="108x27-0+0"
+	FULL="222x56+0+0"
+fi
+
+(($#==0)) && xt_sel 
+
+(($#==1)) && {
+	[ $1 = "L" ] && xt_sel $LGEOM
+	[ $1 = "R" ] && xt_sel $RGEOM
+	[ $1 = "F" ] && xt_sel $FULL
+	[ $1 = "T" ] && {
+		xt_sel $BL
+		xt_sel $BR
+		xt_sel $TL
+		xt_sel $TR
+	}
+}

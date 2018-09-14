@@ -42,12 +42,6 @@ Style "XTerm"       Icon xterm.xpm, SloppyFocus, IconBox -70 1 -1 -140
 # Styles for various common programs:
 Style "*lock"       NoTitle, NoHandles, Sticky, WindowListSkip, ClickToFocus
 Style "xbiff"       NoTitle, Sticky, WindowListSkip, ClickToFocus
-# Style "xcalc"       Icon xcalc.xpm, NoButton 2,RandomPlacement,ClickToFocus
-# Style "xmag"	    Icon mag_glass.xpm, RandomPlacement, ClickToFocus
-
-# some simple default key bindings:
-# Key Next         A       SCM     Next [*] Focus
-# Key Prior        A       SCM     Prev [*] Focus
 
 # some simple default mouse bindings:
 #   for the root window:
@@ -194,27 +188,6 @@ Key Right	A	SM	CursorMove +10 +0
 Key Up		A	SM	CursorMove +0   -10 
 Key Down	A	SM	CursorMove +0   +10 
 
-# press arrow + control page up/dwn home end
-# Key Left	A	C	exec xvkbd -xsendevent -text "\[Home]" 
-# Key Right	A	C	exec xvkbd -xsendevent -text "\[End]"
-# Key Up		A	C	exec xvkbd -xsendevent -text "\[Prior]"
-# Key Down	A	C	exec xvkbd -xsendevent -text "\[Next]"
-# Key BackSpace	A	C	exec xvkbd -xsendevent -text "\[Delete]"
- 
-# Keyboard accelerators 
-# Key F1		A	M	Menu RootMenu
-# Key F2		A	M	Menu Window-Ops
-# Key F3		A	M	WindowList FvwmWinList  
-# Key F4		A	M	Iconify 
-# Key F5		A	M	Move 
-# Key F6		A	M	Resize 
-# Key F7		A	M	CirculateUp 
-# Key F8		A	M	CirculateDown 
-# Key F9		A	C	exec mixerctl outputs.master=-5,-5
-# Key F10		A	C	exec mixerctl outputs.master=+5,+5
-# Key F11		A	C	exec wsconsctl display.backlight=0
-# Key F12		A	C	exec wsconsctl display.backlight=100
-
 Key 1           A       M       Move +0 +0
 Key 2           A       M       Move -0 +0
 Key 3           A       M       Move -0 -0
@@ -222,37 +195,27 @@ Key 4           A       M       Move +0 -0
 
 Key 2		A	C	exec ~/xt_sel
 Key 3		A	C	exec dillo
-Key 4		A	C	exec ~/xt_sel -geometry 222x56+0+0
+Key 4		A	C	exec ~/xt_sel F
 Key 5		A	C	exec xlock -mode flag
 Key 6		A	C	exec pkill -SIGUSR1 xidle
-Key 7		A	C	exec ~/2x1 L
-Key 8		A	C	exec ~/2x1 R
-Key 9		A	C	exec ~/2x2
+Key 7		A	C	exec ~/xt_sel L
+Key 8		A	C	exec ~/xt_sel R
+Key 9		A	C	exec ~/xt_sel T
 
 Key Next	A	C	Desk -1 
 Key Prior	A	C	Desk 1 
  
-#Page Up/Dapge Down keys are used to scroll by one desktop page 
+#Page Up/Page Down keys are used to scroll by one desktop page 
 # in any context, press page up/down + control 
-# in root context, just pressing page up/down is OK 
-#  
-# I prefer the non-wrapping scroll. These are for example purposes only 
-#Key Next	A       C       Scroll 100000 0 
-#Key Next	R       N       Scroll 100000 0   
-#Key Prior	A       C       Scroll -100000 0 
-#Key Prior	R       N       Scroll -100000 0 
 
 ################## FvwmButtons button-bar ################################
 *FvwmButtonsGeometry 176x75-1-1
 *FvwmButtonsBack black 
-*FvwmButtons(Frame 2 Padding 2 2 Container(Rows 2 Columns 2 Frame 1 Padding 10 0))
-*FvwmButtons(1x2 Frame 0 Container(Rows 2 Columns 2 Frame 0))
-*FvwmButtons(Frame 2 Swallow(UseOld,NoHints,Respawn) "xbiff" `Exec exec xbiff -file  /home/ghz/nsmail/Inbox -bg "#000000" -fg green`)
-*FvwmButtons(Frame 3 Swallow(UseOld,NoHints,Respawn) "xclock" `Exec exec xclock -norender -bg "#000000" -fg red -hd red -hl red -padding 0 -update 1`)
-*FvwmButtons(2x1 Frame 2 Swallow(UseOld,NoHints,Respawn) "xload" `Exec exec xload -bg "#000000" -fg blue -hl red -update 2 -nolabel`)
+*FvwmButtons(Frame 2 Padding 0 0 Container(Rows 2 Columns 2 Frame 1 Padding 0 0))
+*FvwmButtons(2x2 Frame 0 Container(Rows 2 Columns 2 Frame 0))
+*FvwmButtons(2x2 Frame 1 Swallow(UseOld,NoHints,Respawn) "xload" `Exec exec xload -bg "#000000" -fg blue -hl red -update 2 -nolabel`)
 *FvwmButtons(End)
-#*FvwmButtons(1x2 Frame 2 Swallow(UseOld) "FvwmPager" "Module FvwmPager 0 0")
-*FvwmButtons(1x2 Frame 2 Swallow(UseOld) "FvwmPager" "Module FvwmPager * *")
+*FvwmButtons(2x2 Frame 2 Swallow(UseOld) "FvwmPager" "Module FvwmPager * *")
 *FvwmButtons(End)
 
 
@@ -262,10 +225,6 @@ Key Prior	A	C	Desk 1
 *FvwmPagerFore white
 *FvwmPagerHilight #2d2d2d
 *FvwmPagerGeometry 80x60-1-1
-#*FvwmPagerLabel 0 OpenBSD\ 4.1
-#*FvwmPagerLabel 1 Maker
-#*FvwmPagerLabel 2 Mail
-#*FvwmPagerLabel 3 Matlab
 *FvwmPagerSmallFont 5x8
 
 ############################################################

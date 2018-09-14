@@ -24,7 +24,8 @@ if [ `hostname -s` = "ep117" ]; then
 else
 	xset s 256
 
-	(sleep 8; xclock -digital -fg green -geometry 170x16-0+0 -padding -2  -strftime '%F %T %Z') &
+	# (sleep 8; xclock -digital -fg green -geometry 170x16-0+0 -padding -2  -strftime '%F %T %Z') &
+	(sleep 8; xclock -digital -fg green -geometry 170x16-0+0 -padding -4  -strftime ' %F %T %Z') &
 
 	xidle -program ~/xl_sel -timeout 256 &
 
