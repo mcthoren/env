@@ -22,7 +22,7 @@ if [ `hostname -s` = "socket" ]; then
 	BR="111x26-0-0"
 	TL="111x26+0+0"
 	TR="111x26-0+0"
-	FULL="222x56+0+0"
+	FULL="222x55+0+0"
 else
 	LGEOM="109x56+0+0"
 	RGEOM="108x56-0+0"
