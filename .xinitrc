@@ -11,7 +11,7 @@ xplanet -gmtlabel -projection rectangular -date_format '%F %T %Z' &
 # linux wierdness can be found in the git history
 xset s 256
 
-xclock -digital -fg green -geometry 170x16-0+0 -padding -4  -strftime ' %F %T %Z'
+xclock -digital -fg green -geometry 170x16-0+0 -padding -4  -strftime ' %F %T %Z' &
 
 xidle -program ~/xl_sel -timeout 256 &
 
