@@ -1,5 +1,4 @@
-#IconPath /usr/local/share/pixmaps/fvwm/
-IconPath /usr/X11R6/include/X11/pixmaps/
+ImagePath /usr/X11R6/include/X11/pixmaps/
 
 EdgeResistance 0
 EdgeScroll 100 100
