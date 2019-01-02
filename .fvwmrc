@@ -5,10 +5,6 @@ EdgeResistance 0 0
 EdgeScroll 100 100
 ClickTime 750
 
-# make sure these fonts exist on your system:
-WindowFont -adobe-times-bold-r-*-*-14-*-*-*-*-*-*-*
-IconFont -adobe-helvetica-bold-r-*-*-10-*-*-*-*-*-*-*
-
 HilightColor #bebebe #006090
 MenuStyle #4d4d4d #bebebe #e7e7e7 -adobe-times-bold-r-*-*-12-*-*-*-*-*-*-* fvwm
 
