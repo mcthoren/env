@@ -24,6 +24,8 @@ colorscheme default
 
 scriptencoding utf-8
 set encoding=utf-8
+set fileencoding=utf-8
+setglobal fenc=utf-8
 
 " from jmates
 " argh. hate help.
