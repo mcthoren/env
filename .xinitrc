@@ -8,35 +8,20 @@ xmodmap ~/.xmodmaprc.`hostname -s`
 
 xplanet -gmtlabel -projection rectangular -date_format '%F %T %Z' &
 
-# work is an ubuntu machine with some weirdness to it
-if [ `hostname -s` = "ep117" ]; then
+# linux wierdness can be found in the git history
+xset s 256
 
-	DISPLAY=:0
-	xset dpms 600
+xclock -digital -fg green -geometry 170x16-0+0 -padding -4  -strftime ' %F %T %Z'
 
-	xautolock -time 4 -locker /home/ep117/mcdole/xl_sel &
+xidle -program ~/xl_sel -timeout 256 &
 
-	xrdb ~/.Xdefaults
-	gsettings set org.gnome.desktop.background picture-uri ~/background/20150305_105222.jpg
+[ `hostname -s` = "socket" ] && {
+	mixer mic 10:10
+	mixer pcm 80:80
+	mixer monitor 40:40
+	mixer vol 90:90
+	xset fp+ /usr/local/share/fonts/urwfonts
+	xset fp rehash
+}
 
-	TZ=/usr/share/zoneinfo/Europe/Berlin xclock -digital -fg green -padding -6 -geometry 175x15-0+0 -strftime ' %F %T %Z' &
-	TZ=UTC xclock -digital -fg green -padding -6 -geometry 169x15+0+0 -strftime ' %F %T %Z' &
-else
-	xset s 256
-
-	# (sleep 8; xclock -digital -fg green -geometry 170x16-0+0 -padding -2  -strftime '%F %T %Z') &
-	(sleep 8; xclock -digital -fg green -geometry 170x16-0+0 -padding -4  -strftime ' %F %T %Z') &
-
-	xidle -program ~/xl_sel -timeout 256 &
-
-	[ `hostname -s` = "socket" ] && {
-		mixer mic 10:10
-		mixer pcm 80:80
-		mixer monitor 40:40
-		mixer vol 90:90
-		xset fp+ /usr/local/share/fonts/urwfonts
-		xset fp rehash
-	}
-
-	exec fvwm2
-fi
+exec fvwm2 |& logger -t fvwm2
