@@ -5,8 +5,6 @@ EdgeResistance 0
 EdgeScroll 100 100
 ClickTime 750
 
-MenuStyle #4d4d4d #bebebe #e7e7e7 -adobe-times-bold-r-*-*-12-*-*-*-*-*-*-* fvwm
-
 DeskTopSize 5x5
 
 ColormapFocus FollowsMouse
