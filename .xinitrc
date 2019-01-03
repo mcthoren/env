@@ -24,5 +24,4 @@ xidle -program ~/xl_sel -timeout 256 &
 	xset fp rehash
 }
 
-# ( exec fvwm2 ) |& logger -t fvwm2
-exec fvwm2
+exec zsh -c "fvwm2 |& logger -t fvwm2"
