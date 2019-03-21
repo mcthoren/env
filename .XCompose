@@ -26,3 +26,13 @@ include "%L"
 <Multi_key> <b> <i> <o>			: "☣"	U2623		# BIOHAZARD SIGN
 <Multi_key> <s> <k> <l>			: "☠"	U2620		# SKULL AND CROSSBONES
 <Multi_key> <f> <l> <t>			: "⏥"	U23E5		# FLATNESS
+#
+# i wind up using this file as a refrence. so add some comments of things i always forget
+# but already exist in X.
+# <Multi_key> <numbersign> <q>    	: "♩"   U2669 # QUARTER NOTE
+# <Multi_key> <numbersign> <e>    	: "♪"   U266a # EIGHTH NOTE
+# <Multi_key> <numbersign> <E>    	: "♫"   U266b # BEAMED EIGHTH NOTES
+# <Multi_key> <numbersign> <S>    	: "♬"   U266c # BEAMED SIXTEENTH NOTES
+# <Multi_key> <numbersign> <b>     	: "♭"   U266d # MUSIC FLAT SIGN
+# <Multi_key> <numbersign> <f>     	: "♮"   U266e # MUSIC NATURAL SIGN
+# <Multi_key> <numbersign> <numbersign> 	: "♯"   U266f # MUSIC SHARP SIGN
