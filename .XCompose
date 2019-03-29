@@ -26,6 +26,10 @@ include "%L"
 <Multi_key> <b> <i> <o>			: "☣"	U2623		# BIOHAZARD SIGN
 <Multi_key> <s> <k> <l>			: "☠"	U2620		# SKULL AND CROSSBONES
 <Multi_key> <f> <l> <t>			: "⏥"	U23E5		# FLATNESS
+<Multi_key> <m> <l> <l>			: "×"	U00D7		# MULTIPLICATION SIGN
+<Multi_key> <v> <c> <p>			: "⨯"	U2A2F		# VECTOR OR CROSS PRODUCT
+<Multi_key> <e> <p>			: "ε"	U03B5		# GREEK SMALL LETTER EPSILON
+<Multi_key> <r> <h> <o>			: "ρ"	U03C1		# GREEK SMALL LETTER RHO
 #
 # i wind up using this file as a refrence. so add some comments of things i always forget
 # but already exist in X.
