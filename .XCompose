@@ -17,7 +17,7 @@ include "%L"
 <Multi_key> <g> <i> <n> <t>		: "⨘"	U2A18		# GEOMETRIC INTEGRAL
 <Multi_key> <s> <i> <n> <t>		: "⨋"	U2A0B		# SUM/INTEGRAL
 <Multi_key> <d> <e> <l>			: "∇"	U2207	        # NABLA
-<Multi_key> <period> <period> <d>	: "∂"	U2202		# PARTIAL DIFFERENTIAL
+<Multi_key> <d> <period> <period>	: "∂"	U2202		# PARTIAL DIFFERENTIAL
 <Multi_key> <h> <minus>			: "ℏ"	U210F		# PLANCK CONSTANT OVER TWO PI
 <Multi_key> <h> <p>			: "ℎ"	U210E		# PLANCK CONSTANT
 <Multi_key> <w> <a> <r> <n>		: "⚠"	U26A0		# WARNING SIGN
@@ -30,13 +30,18 @@ include "%L"
 <Multi_key> <v> <c> <p>			: "⨯"	U2A2F		# VECTOR OR CROSS PRODUCT
 <Multi_key> <e> <p>			: "ε"	U03B5		# GREEK SMALL LETTER EPSILON
 <Multi_key> <r> <h> <o>			: "ρ"	U03C1		# GREEK SMALL LETTER RHO
+<Multi_key> <s> <g>			: "σ"	U03C3		# GREEK SMALL LETTER SIGMA
+<Multi_key> <l> <m>			: "λ"	U03BB		# GREEK SMALL LETTER LAMDA
 #
 # i wind up using this file as a refrence. so add some comments of things i always forget
 # but already exist in X.
-# <Multi_key> <numbersign> <q>    	: "♩"   U2669 # QUARTER NOTE
-# <Multi_key> <numbersign> <e>    	: "♪"   U266a # EIGHTH NOTE
-# <Multi_key> <numbersign> <E>    	: "♫"   U266b # BEAMED EIGHTH NOTES
-# <Multi_key> <numbersign> <S>    	: "♬"   U266c # BEAMED SIXTEENTH NOTES
-# <Multi_key> <numbersign> <b>     	: "♭"   U266d # MUSIC FLAT SIGN
-# <Multi_key> <numbersign> <f>     	: "♮"   U266e # MUSIC NATURAL SIGN
-# <Multi_key> <numbersign> <numbersign> 	: "♯"   U266f # MUSIC SHARP SIGN
+# <Multi_key> <numbersign> <q>		: "♩"   U2669 # QUARTER NOTE
+# <Multi_key> <numbersign> <e>		: "♪"   U266a # EIGHTH NOTE
+# <Multi_key> <numbersign> <E>		: "♫"   U266b # BEAMED EIGHTH NOTES
+# <Multi_key> <numbersign> <S>		: "♬"   U266c # BEAMED SIXTEENTH NOTES
+# <Multi_key> <numbersign> <b>		: "♭"   U266d # MUSIC FLAT SIGN
+# <Multi_key> <numbersign> <f>		: "♮"   U266e # MUSIC NATURAL SIGN
+# <Multi_key> <numbersign> <numbersign>	: "♯"   U266f # MUSIC SHARP SIGN
+# <Multi_key> <v> <slash>		: "√"   U221a   # v / SQUARE ROOT
+# <Multi_key> <slash> <v>		: "√"   U221a   # / v SQUARE ROOT
+# <Multi_key> <8> <8>			: "∞"   U221e   # 8 8 INFINITY
