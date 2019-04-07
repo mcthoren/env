@@ -32,6 +32,9 @@ include "%L"
 <Multi_key> <r> <h> <o>			: "ρ"	U03C1		# GREEK SMALL LETTER RHO
 <Multi_key> <s> <g>			: "σ"	U03C3		# GREEK SMALL LETTER SIGMA
 <Multi_key> <l> <m>			: "λ"	U03BB		# GREEK SMALL LETTER LAMDA
+<Multi_key> <n> <u>			: "ν"	U03BD		# GREEK SMALL LETTER NU
+<Multi_key> <P> <S> <I>			: "Ψ"	U03A8		# GREEK CAPITAL LETTER PSI
+<Multi_key> <p> <s> <i>			: "ψ"	U03C8		# GREEK SMALL LETTER PSI
 #
 # i wind up using this file as a refrence. so add some comments of things i always forget
 # but already exist in X.
