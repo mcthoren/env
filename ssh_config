@@ -1,0 +1,12 @@
+# ControlMaster auto
+# ControlPath ~/.ssh/mux-%r@%h:%p
+
+# TCPKeepAlive yes
+# ServerAliveInterval 120
+# ForwardAgent	yes
+HashKnownHosts	yes
+VisualHostKey	yes
+
+Host github.com
+	User git
+	IdentityFile ~/.ssh/github
