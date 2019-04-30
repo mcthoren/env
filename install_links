@@ -21,3 +21,4 @@ done
 
 ln -s ~/env/.fvwmrc ~/.fvwm2rc
 ln -s ~/env/.xinitrc ~/.xsession
+ln -s ~/env/.Xdefault ~/.Xresources

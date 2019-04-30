@@ -6,8 +6,3 @@ git clone git@github.com:mcthoren/env.git
 ~/env/install_links
 
 in my home dir, and then have exactly the same env i have everywhere.
-
-note:
-.Xresources -> .Xdefault
-.xsession -> .xinitrc
-might be necessary for older weider style unixes
