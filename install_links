@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/local/bin/zsh
 
 to_link=(.fvwmrc\
  .vimrc\
