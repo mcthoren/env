@@ -6,7 +6,7 @@ xset b off
 
 xmodmap ~/.xmodmaprc.`hostname -s`
 
-xplanet -gmtlabel -projection rectangular -date_format '%F %T %Z' &
+/usr/local/bin/xplanet -gmtlabel -projection rectangular -date_format '%F %T %Z' &
 
 # linux wierdness can be found in the git history
 xset s 256
