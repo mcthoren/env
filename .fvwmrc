@@ -70,11 +70,11 @@ Mouse 5 T       N       Next-and-Goto-Desko
 ######################## Initialization Functions ############################
 AddToFunc InitFunction 	  "I" Module FvwmButtons
 +			  "I" ChangeDefaultFocus FocusFollowsMouse
-			   exec feh --bg-fill bglink.png
+			   # exec feh --bg-fill bglink.png
 
 AddToFunc RestartFunction "I" Module FvwmButtons
 +			  "I" ChangeDefaultFocus FocusFollowsMouse
-			   exec feh --bg-fill bglink.png
+			   # exec feh --bg-fill bglink.png
 
 
 
@@ -208,6 +208,7 @@ Key Prior	A	C	Desk 1
 # in any context, press page up/down + control 
 
 ################## FvwmButtons button-bar ################################
+*FvwmButtonsFont	"StringEncoding=UTF-8:xft:*-10"
 *FvwmButtonsGeometry 176x75-1-1
 *FvwmButtonsBack black 
 *FvwmButtons(Frame 2 Padding 0 0 Container(Rows 2 Columns 2 Frame 1 Padding 0 0))
