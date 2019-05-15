@@ -39,7 +39,7 @@ Style "XTerm"       UseDecor terms
 Style "XTerm"       Icon xterm.xpm, SloppyFocus, IconBox -70 1 -1 -140
 
 # Styles for various common programs:
-Style "*lock"       NoTitle, NoHandles, Sticky, WindowListSkip, ClickToFocus
+Style "*lock"       NoTitle, NoHandles, Sticky, WindowListSkip, ClickToFocus, BorderWidth 0
 Style "xbiff"       NoTitle, Sticky, WindowListSkip, ClickToFocus
 
 # some simple default mouse bindings:
