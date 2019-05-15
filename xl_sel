@@ -7,7 +7,7 @@ NUM=$(($RANDOM%5));
 [ `hostname -s` = "bolt" ] && NUM=99
 [ `hostname -s` = "socket" ] && NUM=99
 
-((NUM==0)) && xlock -mode bug -eyes 
+((NUM==0)) && xlock -mode bug
 ((NUM==1)) && xlock -mode life 
 ((NUM==2)) && xlock -mode maze 
 ((NUM==3)) && xlock -mode pyro 
