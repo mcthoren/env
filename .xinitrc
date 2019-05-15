@@ -11,7 +11,7 @@ xmodmap ~/.xmodmaprc.`hostname -s`
 # linux wierdness can be found in the git history
 xset s 256
 
-xclock -geometry 215x16+27+8 -strftime ' %F %T %Z' &
+xclock -geometry 190x16+27+8 -strftime ' %F %T %Z' &
 
 xidle -program ~/xl_sel -timeout 256 &
 
