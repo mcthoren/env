@@ -8,7 +8,11 @@ DeskTopSize 5x5
 
 ColormapFocus FollowsMouse
 
+WindowFont	"StringEncoding=UTF-8:xft:*-10"
+IconFont	"StringEncoding=UTF-8:xft:*-10"
+
 # default Styles:
+Style "*"	Font "StringEncoding=UTF-8:xft:DejaVu Sans Condensed"
 Style "*"	BorderWidth 7, HandleWidth 7
 Style "*"	Icon unknown1.xpm, Color #bebebe/#004070
 Style "*"	MWMFunctions, MWMDecor, HintOverride
@@ -215,12 +219,12 @@ Key Prior	A	C	Desk 1
 
 
 ########################### Pager #########################################
-*FvwmPagerFont -adobe-helvetica-bold-r-*-*-10-*-*-*-*-*-*-*
+*FvwmPagerFont		"StringEncoding=UTF-8:xft:*-8"
 *FvwmPagerBack darkblue
 *FvwmPagerFore white
 *FvwmPagerHilight #2d2d2d
 *FvwmPagerGeometry 80x60-1-1
-*FvwmPagerSmallFont 5x8
+*FvwmPagerSmallFont	"StringEncoding=UTF-8:xft:*-8"
 
 ############################################################
 *FvwmIconBoxIconBack    #cfcfcf
@@ -230,7 +234,7 @@ Key Prior	A	C	Desk 1
 #*FvwmIconBoxFore       blue
 *FvwmIconBoxGeometry    5x1+0+0
 *FvwmIconBoxMaxIconSize 64x38
-*FvwmIconBoxFont        -adobe-helvetica-medium-r-*-*-12-*-*-*-*-*-*-*
+*FvwmIconBoxFont	"StringEncoding=UTF-8:xft:*-10"
 *FvwmIconBoxSortIcons   IconName
 *FvwmIconBoxPadding     4
 *FvwmIconBoxLines       10
@@ -265,10 +269,9 @@ Key Prior	A	C	Desk 1
 # FvwmForm alias - query exit ala mwm
 *QuitVerifyGrabServer
 *QuitVerifyWarpPointer
-*QuitVerifyFont          *helvetica*m*r*n*14*
-#*QuitVerifyButtonFont    *helvetica*m*o*n*14*
-*QuitVerifyButtonFont    7x13bold
 *QuitVerifyFore          Black
+*QuitVerifyFont		"StringEncoding=UTF-8:xft:*-10"
+*QuitVerifyButtonFont	"StringEncoding=UTF-8:xft:*-10:bold"
 *QuitVerifyBack          Light Gray
 *QuitVerifyItemFore Wheat
 *QuitVerifyItemBack Gray50
