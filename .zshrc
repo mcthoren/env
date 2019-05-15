@@ -65,3 +65,11 @@ PS1="[%n@%m %1~]$ "
 EDITOR=vi
 GIT_EDITOR=vi
 export LC_CTYPE="en_US.UTF-8"
+
+# http://tldp.org/HOWTO/Xterm-Title.html
+if [[ $TERM == "xterm" ]] {
+	ts		# not sure about the time stamp yet
+	precmd () {
+		print -Pn "\e]0;%n@%m:%/ (%y) %D{%FT%T%Z}\a"
+	}
+}
