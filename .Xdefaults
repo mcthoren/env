@@ -23,8 +23,7 @@ xclock*update:		1
 xclock*padding:		0
 xclock*analog:		false
 xclock*render:		true
-! xclock*face:		-misc-fixed-bold-r-normal--13-120-75-75-c-80-iso10646-1
-xclock*face:		-misc-fixed-bold-r-normal--10-100-75-75-c-60-iso10646-1
+xclock*face:		DejaVu Sans Condensed-11
 
 XLock.bug.eyes:		on
 ! XLock.font:		-misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1
