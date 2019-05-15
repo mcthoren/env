@@ -26,8 +26,8 @@ xclock*render:		true
 xclock*face:		DejaVu Sans Condensed-11
 
 XLock.bug.eyes:		on
-! XLock.font:		-misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1
-! XLock.planfont:	-misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+XLock.font:		DejaVu Sans Condensed-11
+XLock.planfont:		DejaVu Sans Condensed-11
 
 xbiff*foreground:	green
 xbiff*background:	black
