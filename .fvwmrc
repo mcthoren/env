@@ -12,7 +12,7 @@ WindowFont	"StringEncoding=UTF-8:xft:*-10"
 IconFont	"StringEncoding=UTF-8:xft:*-10"
 
 # default Styles:
-Style "*"	Font "StringEncoding=UTF-8:xft:DejaVu Sans Condensed"
+Style "*"	Font "StringEncoding=UTF-8:xft:DejaVu Sans Condensed-10"
 Style "*"	BorderWidth 7, HandleWidth 7
 Style "*"	Icon unknown1.xpm, Color #bebebe/#004070
 Style "*"	MWMFunctions, MWMDecor, HintOverride
