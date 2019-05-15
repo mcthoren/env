@@ -91,6 +91,7 @@ AddToMenu RootMenu	"Root Menu"	Title
 AddToMenu Window-Ops2	"&Move%mini.move.xpm%"		Move
 +			"&Resize%mini.resize.xpm%"	Resize
 +			"R&aise%mini.raise.xpm%"	Raise   	
++			"&Staytop%mini.stick.xpm%"      WindowStyle StaysOnTop
 +			"&Lower%mini.lower.xpm%"	Lower   	
 +			"(De)&Iconify%mini.iconify.xpm%"	Iconify 	
 +			"(Un)&Stick%mini.stick2.xpm%"	Stick		
