@@ -15,13 +15,18 @@ xload*showLabel:	false
 xload*highlight:	darkred
 xload*update:		3
 
-xclock*foreground:	red
+xclock*foreground:	green
 xclock*background:	black
 xclock*highlight:	red
 xclock*hands:		red
 xclock*update:		1
 xclock*padding:		0
-xclock*render:		false
+! xclock*render:	true
+! xclock*face:		-misc-fixed-bold-r-normal--13-120-75-75-c-80-iso10646-1
+
+XLock.bug.eyes:		on
+! XLock.font:		-misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1
+! XLock.planfont:	-misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
 
 xbiff*foreground:	green
 xbiff*background:	black
