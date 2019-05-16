@@ -3,7 +3,6 @@ xterm*foreground:	#0080ff
 xterm*background:	black
 xterm*saveLines:	1024
 xterm*loginShell:	true
-!xterm*font:		heb8x13
 xterm*cursorBlink:	true
 xterm*cursorOffTime:	300
 xterm*cursorOnTime:	300
@@ -29,16 +28,3 @@ xclock*face:		DejaVu Sans Condensed-11
 XLock.bug.eyes:		on
 XLock.font:		-misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1
 XLock.planfont:		-misc-fixed-medium-r-normal--13-120-75-75-c-80-iso10646-1
-
-xbiff*foreground:	green
-xbiff*background:	black
-
-rxvt*background:	black
-rxvt*foreground:	#0080ff
-rxvt*saveLines:		1024
-rxvt*loginShell:	true
-!rxvt*scrollstyle:	xterm
-!rxvt*multichar_encoding:	gb
-!rxvt*scrollBar_floating:	false
-
-!xvkbd.noSync: true
