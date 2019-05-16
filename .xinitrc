@@ -3,23 +3,18 @@ cd
 export LC_CTYPE="en_US.UTF-8"
 xset r rate 150 50
 xset b off
+xset s 256
 
 xmodmap ~/.xmodmaprc.`hostname -s`
 
 /usr/local/bin/xplanet -gmtlabel -projection rectangular -date_format '%F %T %Z' &
-
-# linux wierdness can be found in the git history
-xset s 256
 
 xclock -geometry 190x16+27+8 -strftime ' %F %T %Z' &
 
 xidle -program ~/xl_sel -timeout 256 &
 
 [ `hostname -s` = "socket" ] && {
-	mixer mic 10:10
-	mixer pcm 80:80
-	mixer monitor 40:40
-	mixer vol 90:90
+	~/scripts/set_mixer_for_radio
 	xset fp+ /usr/local/share/fonts/urwfonts
 	xset fp rehash
 }
