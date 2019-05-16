@@ -1,5 +1,7 @@
 ImagePath /usr/X11R6/include/X11/pixmaps/
 
+PrintInfo Locale 2
+
 EdgeResistance 0
 EdgeScroll 100 100
 ClickTime 750
@@ -8,8 +10,10 @@ DeskTopSize 5x5
 
 ColormapFocus FollowsMouse
 
-WindowFont	"StringEncoding=UTF-8:xft:*-10"
-IconFont	"StringEncoding=UTF-8:xft:*-10"
+Style	 "*"	Font		"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-11:encoding=iso10646-1"
+Style	 "*"	IconFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-10:encoding=iso10646-1"
+MenuStyle "*"	Font		"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-11:encoding=iso10646-1"
+MenuStyle "*"	TitleFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-12:encoding=iso10646-1"
 
 # default Styles:
 Style "*"	Font "StringEncoding=UTF-8:xft:DejaVu Sans Condensed-10"
@@ -226,7 +230,7 @@ Key Prior	A	C	Desk 1
 *FvwmPagerFore white
 *FvwmPagerHilight #2d2d2d
 *FvwmPagerGeometry 80x60-1-1
-*FvwmPagerSmallFont	"StringEncoding=UTF-8:xft:*-8"
+*FvwmPagerSmallFont	"StringEncoding=UTF-8:xft:luxi-4"
 
 ############################################################
 *FvwmIconBoxIconBack    #cfcfcf
