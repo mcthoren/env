@@ -1,6 +1,6 @@
 ImagePath /usr/X11R6/include/X11/pixmaps/
 
-PrintInfo Locale 2
+# PrintInfo Locale 2
 
 EdgeResistance 0
 EdgeScroll 100 100
@@ -48,14 +48,14 @@ Style "xbiff"       NoTitle, Sticky, WindowListSkip, ClickToFocus
 
 # some simple default mouse bindings:
 #   for the root window:
-Mouse 3	R   	A       Menu RootMenu Nop
-Mouse 2	R    	A      	Menu Window-Ops Nop
-Mouse 1	R    	A      	WindowList
+Mouse 3	R	A	Menu RootMenu Nop
+Mouse 2	R	A	Menu Window-Ops Nop
+Mouse 1	R	A	WindowList
 
 #   for the title bar buttons:
-Mouse 0	1    	A      	Menu Window-Ops2 Close
-Mouse 0	2    	A     	Maximize-Func
-Mouse 0	4    	A     	Iconify
+Mouse 0	1	A	Menu Window-Ops2 Close
+Mouse 0	2	A	Maximize-Func
+Mouse 0	4	A	Iconify
 
 #   for other parts of the window/borders/icons:
 Mouse 1	F	A	Resize-or-Raise
@@ -65,11 +65,11 @@ Mouse 2	I	A	Iconify
 Mouse 2	FST	A	Menu Window-Ops2 Nop
 Mouse 3	TSIF	A	RaiseLower
 
-Mouse 4 A       C       Desk -1 
-Mouse 5 A       C       Desk 1 
+Mouse 4 A	C	Desk -1
+Mouse 5 A	C	Desk 1
 
-Mouse 4 T       N       Next-and-Goto-Deski 
-Mouse 5 T       N       Next-and-Goto-Desko 
+Mouse 4 T	N	Next-and-Goto-Deski
+Mouse 5 T	N	Next-and-Goto-Desko
 
 ######################## Initialization Functions ############################
 AddToFunc InitFunction 	  "I" Module FvwmButtons
@@ -214,8 +214,8 @@ Key Prior	A	C	Desk 1
 
 ################## FvwmButtons button-bar ################################
 *FvwmButtonsFont	"StringEncoding=UTF-8:xft:*-10"
-*FvwmButtonsGeometry 176x75-1-1
-*FvwmButtonsBack black 
+*FvwmButtonsGeometry	176x75-1-1
+*FvwmButtonsBack	black
 *FvwmButtons(Frame 2 Padding 0 0 Container(Rows 2 Columns 2 Frame 1 Padding 0 0))
 *FvwmButtons(2x2 Frame 0 Container(Rows 2 Columns 2 Frame 0))
 *FvwmButtons(2x2 Frame 1 Swallow(UseOld,NoHints,Respawn) "xload" `Exec exec xload -bg "#000000" -fg blue -hl red -update 2 -nolabel`)
@@ -226,10 +226,10 @@ Key Prior	A	C	Desk 1
 
 ########################### Pager #########################################
 *FvwmPagerFont		"StringEncoding=UTF-8:xft:*-8"
-*FvwmPagerBack darkblue
-*FvwmPagerFore white
-*FvwmPagerHilight #2d2d2d
-*FvwmPagerGeometry 80x60-1-1
+*FvwmPagerBack		darkblue
+*FvwmPagerFore		white
+*FvwmPagerHilight	#2d2d2d
+*FvwmPagerGeometry	80x60-1-1
 *FvwmPagerSmallFont	"StringEncoding=UTF-8:xft:luxi-4"
 
 ############################################################
