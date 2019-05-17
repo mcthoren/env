@@ -70,6 +70,6 @@ export LC_CTYPE="en_US.UTF-8"
 if [[ $TERM == "xterm" ]] {
 	ts		# not sure about the time stamp yet
 	precmd () {
-		print -Pn "\e]0;%n@%m:%/ (%y) %D{%FT%T%Z}\a"
+		print -Pn "\e]0;%D{%FT%T%Z} (%y) %n@%m:%/\a"
 	}
 }
