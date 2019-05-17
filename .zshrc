@@ -51,6 +51,7 @@ alias cl="cal `date +%Y`"
 alias ts="date -u +%FT%T%Z"
 rw () { cat /usr/share/dict/words |perl -e 'rand $. < 1 && ($x = $_) while <>; print $x' ;}
 rl () { perl -e 'rand $. < 1 && ($x = $_) while <>; print $x' ;}
+tag () { echo -en "$(hostname -s) $(ts) $(rw)\n"; }
 
 PS1="[%n@%m %1~]$ "
 EDITOR=vi
