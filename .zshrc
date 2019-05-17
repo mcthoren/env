@@ -33,16 +33,7 @@ bindkey -s "^[Om" "-"
 bindkey -s "^[Oj" "*"
 bindkey -s "^[Oo" "/"
 
-if [ `hostname -s` = "ep117" ]; then
-	zstyle ':completion:*' completer _complete _ignored
-	zstyle :compinstall filename '/home/ep117/mcdole/.zshrc'
-	PYTHONPATH=/home/ep117/mcdole/dr_guo/py_libs/:/home/ep117/mcdole/dr_guo/planetotools/:/home/ep117/mcdole/dr_guo/RoverState/
-	MSL_CHARGED_DIR=/home/ep117/mcdole/dr_guo/MSL/
-	export PYTHONPATH MSL_CHARGED_DIR
-else
-	zstyle :compinstall filename '/home/ghz/.zshrc'
-fi
-
+zstyle :compinstall filename '/home/ghz/.zshrc'
 autoload -Uz compinit
 compinit
 
