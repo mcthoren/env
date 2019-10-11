@@ -56,6 +56,7 @@ tag () { echo -en "$(hostname -s) $(ts) $(rw)\n"; }
 PS1="[%n@%m %1~]$ "
 EDITOR=vi
 GIT_EDITOR=vi
+export LYNX_CFG=~/lynx.cfg
 export LC_CTYPE="en_US.UTF-8"
 
 # http://tldp.org/HOWTO/Xterm-Title.html
