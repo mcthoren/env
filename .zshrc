@@ -41,7 +41,7 @@ alias mpfa='mplayer -cache 32768 -fs -framedrop -af volnorm'
 alias mpfac='mplayer -cache 32768 -fs -framedrop -af volnorm  -vfm ffmpeg -lavdopts lowres=1:fast:skiploopfilter=all -nobps -ni -forceidx -mc 0'
 alias mpfahc='mplayer -cache 32768 -fs -framedrop -af volnorm  -vfm ffmpeg -lavdopts fast:skiploopfilter=all -nobps -ni -forceidx -mc 0'
 alias sc="~/scripts/sc"
-alias ff="ulimit -d 2048000; ulimit -c 1; firefox -P default"
+alias ff="ulimit -d 2048000; ulimit -c 1; firefox-esr -P default-default-1"
 alias fka="ulimit -d 2048000; ulimit -c 1; firefox -P ka"
 alias xom="ulimit -d 1024000; ulimit -c 2048; xombrero"
 alias cl="cal `date +%Y`"
