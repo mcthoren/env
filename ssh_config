@@ -6,6 +6,7 @@
 # ForwardAgent	yes
 HashKnownHosts	yes
 VisualHostKey	yes
+UpdateHostKeys  yes
 
 HostKeyAlgorithms ^ssh-ed25519
 
