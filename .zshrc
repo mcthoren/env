@@ -60,9 +60,13 @@ export LC_CTYPE="en_US.UTF-8"
 export TOG_COLORS=1
 
 # http://tldp.org/HOWTO/Xterm-Title.html
-if [[ $TERM == "xterm" ]] {
+[[ $TERM == "xterm" ]] && {
 	ts		# not sure about the time stamp yet
 	precmd () {
 		print -Pn "\e]0;%D{%FT%T%Z} (%y) %n@%m:%/\a"
 	}
+}
+
+[ "$(uname -s)" = "Linux" ] && {
+	PATH="$PATH:/usr/local/sbin:/usr/sbin:/sbin"
 }
