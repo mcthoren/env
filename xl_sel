@@ -5,7 +5,7 @@ NUM=$(($RANDOM%5));
 [ `hostname -s` = "ep117" ] && NUM=22
 [ `hostname -s` = "iva" ] && NUM=99
 [ `hostname -s` = "bolt" ] && NUM=99
-[ `hostname -s` = "socket" ] && NUM=99
+[ `hostname -s` = "socket" ] && NUM=64
 
 ((NUM==0)) && xlock -mode bug
 ((NUM==1)) && xlock -mode life 
@@ -27,6 +27,8 @@ NUM=$(($RANDOM%5));
 ((NUM==42)) && dm-tool lock
 
 ((NUM==62)) && echo "shell test"
+
+((NUM==64)) && slock
 
 ((NUM==99)) && {
 	xlock -mode blank
