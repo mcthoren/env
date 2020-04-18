@@ -14,7 +14,7 @@ xclock -geometry 190x16+27+8 -strftime ' %F %T %Z' &
 xidle -program ~/xl_sel -timeout 256 &
 
 [ `hostname -s` = "socket" ] && {
-	xinput --set-prop 12 151 0.400000, 0.000000, 0.000000, 0.000000, 0.400000, 0.000000, 0.000000, 0.000000, 1.000000
+	xinput --set-prop 12 304 -0.5
 }
 
 exec zsh -c "fvwm2 |& logger -t fvwm2"
