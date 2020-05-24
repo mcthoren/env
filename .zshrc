@@ -51,7 +51,8 @@ rl () { perl -e 'rand $. < 1 && ($x = $_) while <>; print $x' ;}
 tag () { echo -en "$(hostname -s) $(ts) $(rw)\n"; }
 stamp () { for i in $@; do cp $i $i.$(ts); done; }
 devstamp () { for i in $@; do cp $i dev/$i.$(ts); done; }
-laser () { for i in $@; do awk '{printf "%s\r\n", $0}' $i | lpr; done; }
+laser () { for i in $@; do awk '{printf "%s\r\n", $0}' $i | iconv -f  UTF-8 -t cp437 | lpr; done; }
+laserps () { for i in $@; do awk '{printf "%s\r\n", $0}' $i | iconv -f  UTF-8 -t  ISO-8859-1 | a2ps; done; }
 
 PS1="[%n@%m %1~]$ "
 EDITOR=vi
