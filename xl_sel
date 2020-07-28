@@ -3,8 +3,8 @@
 NUM=$(($RANDOM%5));
 
 [ `hostname -s` = "ep117" ] && NUM=22
-[ `hostname -s` = "iva" ] && NUM=99
-[ `hostname -s` = "bolt" ] && NUM=99
+[ `hostname -s` = "iva" ] && NUM=65
+[ `hostname -s` = "bolt" ] && NUM=65
 [ `hostname -s` = "socket" ] && NUM=64
 
 ((NUM==0)) && xlock -mode bug
@@ -29,6 +29,7 @@ NUM=$(($RANDOM%5));
 ((NUM==62)) && echo "shell test"
 
 ((NUM==64)) && slock
+((NUM==65)) && pkill -SIGUSR1 xidle
 
 ((NUM==99)) && {
 	xlock -mode blank
