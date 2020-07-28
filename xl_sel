@@ -21,18 +21,16 @@ HOST_N="$(hostname -s)"
 ((NUM==8)) && xlock -mode strange 
 ((NUM==9)) && xlock -mode thornbird 
 
-((NUM==22)) && {
+((NUM==62)) && {
 	gnome-screensaver-command -l
 	# xset dpms 240
 }
 
-((NUM==42)) && dm-tool lock
-
-((NUM==62)) && echo "shell test"
-
+((NUM==63)) && dm-tool lock
 ((NUM==64)) && slock
 ((NUM==65)) && pkill -SIGUSR1 xidle
 
+((NUM==98)) && echo "shell test"
 ((NUM==99)) && {
 	xlock -mode blank
 	# xlock -mode blanck &
