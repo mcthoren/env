@@ -17,7 +17,6 @@ Style "*"	BorderWidth 7, HandleWidth 7
 Style "*"	Icon unknown1.xpm, Color #bebebe/#004070
 Style "*"	MWMFunctions, MWMDecor, HintOverride
 Style "*"	DecorateTransient, NoPPosition
-Style "*"	IconBox 0 -10 -280 -1
 Style "*"	FocusFollowsMouse
 Style "*"	RandomPlacement, SmartPlacement
 Style "*"	EdgeMoveDelay 0
