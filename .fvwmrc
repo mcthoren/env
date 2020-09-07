@@ -51,7 +51,7 @@ Mouse 2	R	A	Menu Window-Ops Nop
 Mouse 1	R	A	WindowList
 
 #   for the title bar buttons:
-Mouse 0	1	A	Menu Window-Ops2 Close
+Mouse 0	1	A	Menu Window-Ops Close
 Mouse 0	2	A	Maximize-Func
 Mouse 0	4	A	Iconify
 
@@ -60,7 +60,7 @@ Mouse 1	F	A	Resize-or-Raise
 Mouse 1	TS	A	Move-or-Raise
 Mouse 1	I	A	Move-or-Iconify
 Mouse 2	I	A	Iconify
-Mouse 2	FST	A	Menu Window-Ops2 Nop
+Mouse 2	FST	A	Menu Window-Ops Nop
 Mouse 3	TSIF	A	RaiseLower
 
 Mouse 4 A	C	Desk -1
@@ -79,12 +79,12 @@ AddToMenu RootMenu	"Root Menu"	Title
 +			"XTerm%mini.xterm.xpm%"		Exec exec xterm
 +                       "XLock%mini.xlock.xpm%"         Exec exec xlock -mode pyro
 +			"Console"	Module  FvwmConsole
-+			"Window-Ops2"	Popup Window-Ops2
++			"Window-Ops"	Popup Window-Ops
 +			""		Nop
 +		      	"Restart Fvwm%mini.refresh.xpm%"	    Restart
 +                       "Exit"  Module FvwmForm QuitVerify
 
-AddToMenu Window-Ops2	"&Move%mini.move.xpm%"		Move
+AddToMenu Window-Ops	"&Move%mini.move.xpm%"		Move
 +			"&Resize%mini.resize.xpm%"	Resize
 +			"R&aise%mini.raise.xpm%"	Raise   	
 +			"&Staytop%mini.stick.xpm%"      WindowStyle StaysOnTop
