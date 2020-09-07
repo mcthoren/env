@@ -96,10 +96,6 @@ AddToMenu Window-Ops	"&Move%mini.move.xpm%"		Move
 +			"Destroy%mini.destroy.xpm%"	Destroy 	
 
 # functions
-AddToFunc MailFunction	   "I" Next [$0] Iconify -1
-+		           "I" Next [$0] Focus
-+			   "I" None [$0] Exec $0 $1
-
 AddToFunc Move-or-Raise		"I" Raise
 +				"M" Move
 +  				"D" Lower
