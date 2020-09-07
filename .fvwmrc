@@ -4,7 +4,6 @@ ImagePath /usr/X11R6/include/X11/pixmaps/
 
 EdgeResistance 0
 EdgeScroll 100 100
-ClickTime 750
 
 DeskTopSize 5x5
 
