@@ -71,14 +71,8 @@ Mouse 5 T	N	Next-and-Goto-Desko
 
 ######################## Initialization Functions ############################
 AddToFunc InitFunction 	  "I" Module FvwmButtons
-+			  "I" ChangeDefaultFocus FocusFollowsMouse
-			   # exec feh --bg-fill bglink.png
 
 AddToFunc RestartFunction "I" Module FvwmButtons
-+			  "I" ChangeDefaultFocus FocusFollowsMouse
-			   # exec feh --bg-fill bglink.png
-
-
 
 ######################## Menus ###################
 AddToMenu RootMenu	"Root Menu"	Title
