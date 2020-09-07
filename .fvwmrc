@@ -1,7 +1,5 @@
 ImagePath /usr/X11R6/include/X11/pixmaps/
 
-# PrintInfo Locale 2
-
 EdgeResistance 0
 EdgeScroll 100 100
 
@@ -14,7 +12,7 @@ Style	 "*"	IconFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-10:encoding=
 MenuStyle "*"	Font		"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-11:encoding=iso10646-1"
 MenuStyle "*"	TitleFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-12:encoding=iso10646-1"
 
-# default Styles:
+# default styles
 Style "*"	BorderWidth 7, HandleWidth 7
 Style "*"	Icon unknown1.xpm, Color #bebebe/#004070
 Style "*"	MWMFunctions, MWMDecor, HintOverride
@@ -27,20 +25,20 @@ Style "*"	EdgeMoveResistance 0
 Style "*"	HilightFore "#bebebe"
 Style "*"	HilightBack "#006090"
 
-# Styles for various Fvwm modules:
+# styles for various Fvwm modules:
 Style "Fvwm*"       NoTitle,  Sticky, WindowListSkip
 Style "Fvwm*"       BorderWidth 2, CirculateSkipIcon, CirculateSkip
 Style "FvwmPager"   StaysOnTop
 Style "FvwmBanner"  StaysOnTop
 Style "FvwmButtons" Icon toolbox.xpm, ClickToFocus
 
-# Styles for your common terminal emulator programs:
+# styles for your common terminal emulator programs:
 AddToDecor terms
 + ButtonStyle 1 Pixmap mini.xterm.xpm
 Style "XTerm"       UseDecor terms
 Style "XTerm"       Icon xterm.xpm, SloppyFocus, IconBox -70 1 -1 -140
 
-# Styles for various common programs:
+# styles for various common programs:
 Style "*lock"       NoTitle, NoHandles, Sticky, WindowListSkip, ClickToFocus, BorderWidth 0
 Style "xbiff"       NoTitle, Sticky, WindowListSkip, ClickToFocus
 
@@ -69,12 +67,12 @@ Mouse 5 A	C	Desk 1
 Mouse 4 T	N	Next-and-Goto-Deski
 Mouse 5 T	N	Next-and-Goto-Desko
 
-######################## Initialization Functions ############################
+# initialization functions
 AddToFunc InitFunction 	  "I" Module FvwmButtons
 
 AddToFunc RestartFunction "I" Module FvwmButtons
 
-######################## Menus ###################
+# menus
 AddToMenu RootMenu	"Root Menu"	Title
 +			"XTerm%mini.xterm.xpm%"		Exec exec xterm
 +                       "XLock%mini.xlock.xpm%"         Exec exec xlock -mode pyro
@@ -97,8 +95,7 @@ AddToMenu Window-Ops	"&Move%mini.move.xpm%"		Move
 +			"&Close%mini.cut.xpm%"	Close
 +			"Destroy%mini.destroy.xpm%"	Destroy 	
 
-######################## Sample Functions ##########################
-
+# functions
 AddToFunc MailFunction	   "I" Next [$0] Iconify -1
 +		           "I" Next [$0] Focus
 +			   "I" None [$0] Exec $0 $1
@@ -125,11 +122,8 @@ AddToFunc Next-and-Goto-Deski   "I" MoveToDesk -1
 AddToFunc Next-and-Goto-Desko   "I" MoveToDesk 1
 +                               "I" Desk 1
 
-############################################################################ 
-# Now some keyboard shortcuts. 
- 
+# keyboard shortcuts
 IgnoreModifiers L25
-# Arrow Keys 
 # press arrow + control + meta anywhere, and scroll by 1 page 
 Key Left	A	CM	Scroll -100 0 
 Key Right	A	CM	Scroll +100 +0 
@@ -171,10 +165,7 @@ Key 9		A	C	exec ~/xt_sel T
 Key Next	A	C	Desk -1 
 Key Prior	A	C	Desk 1 
  
-#Page Up/Page Down keys are used to scroll by one desktop page 
-# in any context, press page up/down + control 
-
-################## FvwmButtons button-bar ################################
+# FvwmButtons
 *FvwmButtonsFont	"StringEncoding=UTF-8:xft:*-10"
 *FvwmButtonsGeometry	176x75-1-1
 *FvwmButtonsBack	black
@@ -185,8 +176,7 @@ Key Prior	A	C	Desk 1
 *FvwmButtons(2x2 Frame 2 Swallow(UseOld) "FvwmPager" "Module FvwmPager * *")
 *FvwmButtons(End)
 
-
-########################### Pager #########################################
+# pager
 *FvwmPagerFont		"StringEncoding=UTF-8:xft:*-8"
 *FvwmPagerBack		darkblue
 *FvwmPagerFore		white
