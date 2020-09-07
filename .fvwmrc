@@ -115,9 +115,9 @@ AddToFunc Move-or-Raise2	"M" Raise
 +				"M" Move
 +  				"D" Lower
 
-AddToFunc Maximize-Func		"M" Maximize	 0 100
-+				"C" Maximize	 0 80
-+				"D" Maximize	 100 100
+AddToFunc Maximize-Func		"M" Maximize
++				"C" Maximize
++				"D" Maximize
 
 AddToFunc Move-or-Iconify	"I" Raise
 +				"M" Move
