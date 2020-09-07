@@ -96,10 +96,6 @@ AddToMenu Window-Ops	"&Move%mini.move.xpm%"		Move
 +			"&Delete%mini.excl.xpm%"	Delete	
 +			"&Close%mini.cut.xpm%"	Close
 +			"Destroy%mini.destroy.xpm%"	Destroy 	
-+			""		Nop
-+			"ScrollBar" 	Module FvwmScroll 2 2	
-+			"Print"         PrintFunction
-#+                       "Print Reverse" PrintReverseFunction
 
 ######################## Sample Functions ##########################
 
