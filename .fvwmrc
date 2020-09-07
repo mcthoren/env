@@ -32,7 +32,7 @@ Style "FvwmButtons" Icon toolbox.xpm, ClickToFocus
 
 # styles for your common terminal emulator programs:
 AddToDecor terms
-+ ButtonStyle 1 Pixmap mini.xterm.xpm
++		ButtonStyle 1 Pixmap mini.xterm.xpm
 Style "XTerm"	UseDecor terms
 Style "XTerm"	Icon xterm.xpm, SloppyFocus
 
@@ -156,7 +156,7 @@ Key 8		A	C	exec ~/xt_sel R
 Key 9		A	C	exec ~/xt_sel T
 
 Key Next	A	C	Desk -1
-Key Prior	A	C	Desk 1
+Key Prior	A	C	Desk +1
  
 # FvwmButtons
 *FvwmButtonsFont	"StringEncoding=UTF-8:xft:*-10"
