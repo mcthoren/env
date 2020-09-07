@@ -7,8 +7,8 @@ DeskTopSize 5x5
 
 ColormapFocus FollowsMouse
 
-Style	 "*"	Font		"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-11:encoding=iso10646-1"
-Style	 "*"	IconFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-10:encoding=iso10646-1"
+Style	  "*"	Font		"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-11:encoding=iso10646-1"
+Style	  "*"	IconFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-10:encoding=iso10646-1"
 MenuStyle "*"	Font		"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-11:encoding=iso10646-1"
 MenuStyle "*"	TitleFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-12:encoding=iso10646-1"
 
@@ -33,12 +33,11 @@ Style "FvwmButtons" Icon toolbox.xpm, ClickToFocus
 # styles for your common terminal emulator programs:
 AddToDecor terms
 + ButtonStyle 1 Pixmap mini.xterm.xpm
-Style "XTerm"       UseDecor terms
-Style "XTerm"       Icon xterm.xpm, SloppyFocus, IconBox -70 1 -1 -140
+Style "XTerm"	UseDecor terms
+Style "XTerm"	Icon xterm.xpm, SloppyFocus
 
 # styles for various common programs:
-Style "*lock"       NoTitle, NoHandles, Sticky, WindowListSkip, ClickToFocus, BorderWidth 0
-Style "xbiff"       NoTitle, Sticky, WindowListSkip, ClickToFocus
+Style "*lock"	NoTitle, NoHandles, Sticky, WindowListSkip, ClickToFocus, BorderWidth 0
 
 # some simple default mouse bindings:
 #   for the root window:
@@ -66,37 +65,37 @@ Mouse 4 T	N	Next-and-Goto-Deski
 Mouse 5 T	N	Next-and-Goto-Desko
 
 # initialization functions
-AddToFunc InitFunction 	  "I" Module FvwmButtons
+AddToFunc InitFunction		"I" Module FvwmButtons
 
-AddToFunc RestartFunction "I" Module FvwmButtons
+AddToFunc RestartFunction	"I" Module FvwmButtons
 
 # menus
 AddToMenu RootMenu	"Root Menu"	Title
-+			"XTerm%mini.xterm.xpm%"		Exec exec xterm
-+                       "XLock%mini.xlock.xpm%"         Exec exec xlock -mode pyro
-+			"Console"	Module  FvwmConsole
-+			"Window-Ops"	Popup Window-Ops
++			"XTerm%mini.xterm.xpm%"			Exec exec xterm
++			"XLock%mini.xlock.xpm%"			Exec exec xlock -mode pyro
++			"Console"	Module			FvwmConsole
++			"Window-Ops"	Popup			Window-Ops
 +			""		Nop
-+		      	"Restart Fvwm%mini.refresh.xpm%"	    Restart
-+                       "Exit"  Module FvwmForm QuitVerify
++			"Restart Fvwm%mini.refresh.xpm%"	Restart
++			"Exit"		Module			FvwmForm QuitVerify
 
-AddToMenu Window-Ops	"&Move%mini.move.xpm%"		Move
-+			"&Resize%mini.resize.xpm%"	Resize
-+			"R&aise%mini.raise.xpm%"	Raise   	
-+			"&Staytop%mini.stick.xpm%"      WindowStyle StaysOnTop
-+			"&Lower%mini.lower.xpm%"	Lower   	
-+			"(De)&Iconify%mini.iconify.xpm%"	Iconify 	
-+			"(Un)&Stick%mini.stick2.xpm%"	Stick		
-+                       "(Un)Ma&ximize%mini.maximize.xpm%" Maximize
-+			""		Nop     	
-+			"&Delete%mini.excl.xpm%"	Delete	
-+			"&Close%mini.cut.xpm%"	Close
-+			"Destroy%mini.destroy.xpm%"	Destroy 	
+AddToMenu Window-Ops	"&Move%mini.move.xpm%"			Move
++			"&Resize%mini.resize.xpm%"		Resize
++			"R&aise%mini.raise.xpm%"		Raise
++			"&Staytop%mini.stick.xpm%"		WindowStyle StaysOnTop
++			"&Lower%mini.lower.xpm%"		Lower
++			"(De)&Iconify%mini.iconify.xpm%"	Iconify
++			"(Un)&Stick%mini.stick2.xpm%"		Stick
++                       "(Un)Ma&ximize%mini.maximize.xpm%"	Maximize
++			""		Nop
++			"&Delete%mini.excl.xpm%"		Delete
++			"&Close%mini.cut.xpm%"			Close
++			"Destroy%mini.destroy.xpm%"		Destroy
 
 # functions
 AddToFunc Move-or-Raise		"I" Raise
 +				"M" Move
-+  				"D" Lower
++				"D" Lower
 
 AddToFunc Maximize-Func		"M" Maximize
 +				"C" Maximize
@@ -110,42 +109,42 @@ AddToFunc Resize-or-Raise	"I" Raise
 +				"M" Resize
 +				"D" Lower
 
-AddToFunc Next-and-Goto-Deski   "I" MoveToDesk -1
-+                               "I" Desk -1
+AddToFunc Next-and-Goto-Deski	"I" MoveToDesk -1
++				"I" Desk -1
 
-AddToFunc Next-and-Goto-Desko   "I" MoveToDesk 1
-+                               "I" Desk 1
+AddToFunc Next-and-Goto-Desko	"I" MoveToDesk 1
++				"I" Desk 1
 
 # keyboard shortcuts
 IgnoreModifiers L25
 # press arrow + control + meta anywhere, and scroll by 1 page 
-Key Left	A	CM	Scroll -100 0 
-Key Right	A	CM	Scroll +100 +0 
-Key Up		A	CM	Scroll +0   -100 
-Key Down	A	CM	Scroll +0   +100 
+Key Left	A	CM	Scroll -100 +0
+Key Right	A	CM	Scroll +100 +0
+Key Up		A	CM	Scroll +0   -100
+Key Down	A	CM	Scroll +0   +100
  
 # press arrow + meta key, and scroll by 1/10 of a page 
-Key Left	A	M	Scroll -10 +0 
-Key Right	A	M	Scroll +10 +0 
-Key Up		A	M	Scroll +0   -10 
-Key Down	A	M	Scroll +0   +10 
+Key Left	A	M	Scroll -10 +0
+Key Right	A	M	Scroll +10 +0
+Key Up		A	M	Scroll +0  -10
+Key Down	A	M	Scroll +0  +10
  
 # press shift arrow + control anywhere, and move the pointer by 1% of a page 
-Key Left	A	SC	CursorMove -1 0 
-Key Right	A	SC	CursorMove +1 +0 
-Key Up		A	SC	CursorMove +0   -1 
-Key Down	A	SC	CursorMove +0   +1 
+Key Left	A	SC	CursorMove -1 +0
+Key Right	A	SC	CursorMove +1 +0
+Key Up		A	SC	CursorMove +0 -1
+Key Down	A	SC	CursorMove +0 +1
  
 # press shift arrow + meta key, and move the pointer by 1/10 of a page 
-Key Left	A	SM	CursorMove -10 +0 
-Key Right	A	SM	CursorMove +10 +0 
-Key Up		A	SM	CursorMove +0   -10 
-Key Down	A	SM	CursorMove +0   +10 
+Key Left	A	SM	CursorMove -10 +0
+Key Right	A	SM	CursorMove +10 +0
+Key Up		A	SM	CursorMove +0  -10
+Key Down	A	SM	CursorMove +0  +10
 
-Key 1           A       M       Move +0 +0
-Key 2           A       M       Move -0 +0
-Key 3           A       M       Move -0 -0
-Key 4           A       M       Move +0 -0
+Key 1		A	M	Move +0 +0
+Key 2		A	M	Move -0 +0
+Key 3		A	M	Move -0 -0
+Key 4		A	M	Move +0 -0
 
 Key 2		A	C	exec ~/xt_sel
 Key 3		A	C	exec dillo
@@ -156,8 +155,8 @@ Key 7		A	C	exec ~/xt_sel L
 Key 8		A	C	exec ~/xt_sel R
 Key 9		A	C	exec ~/xt_sel T
 
-Key Next	A	C	Desk -1 
-Key Prior	A	C	Desk 1 
+Key Next	A	C	Desk -1
+Key Prior	A	C	Desk 1
  
 # FvwmButtons
 *FvwmButtonsFont	"StringEncoding=UTF-8:xft:*-10"
