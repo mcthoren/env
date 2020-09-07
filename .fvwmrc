@@ -196,17 +196,13 @@ Key Prior	A	C	Desk 1
 
 *QuitVerifyGrabServer
 *QuitVerifyWarpPointer
-*QuitVerifyFore          Black
+*QuitVerifyFore		Black
 *QuitVerifyFont		"StringEncoding=UTF-8:xft:*-10"
 *QuitVerifyButtonFont	"StringEncoding=UTF-8:xft:*-10:bold"
-*QuitVerifyBack          Light Gray
-*QuitVerifyItemFore Wheat
-*QuitVerifyItemBack Gray50
-# begin items
-*QuitVerifyLine          center
-*QuitVerifyText          "Do you really want to exit FVWM?"
-*QuitVerifyLine          expand
-*QuitVerifyButton   quit      " Exit "
-*QuitVerifyCommand  Quit
-*QuitVerifyButton   quit      "Cancel"
-*QuitVerifyCommand  Nop
+*QuitVerifyLine		center
+*QuitVerifyText		"Do you really want to exit FVWM?"
+*QuitVerifyLine		expand
+*QuitVerifyButton	quit	" Exit "
+*QuitVerifyCommand	Quit
+*QuitVerifyButton	quit	"Cancel"
+*QuitVerifyCommand	Nop
