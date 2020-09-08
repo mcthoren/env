@@ -179,7 +179,6 @@ Key Prior	A	C	Desk +1
 
 *QuitVerifyGrabServer
 *QuitVerifyWarpPointer
-*QuitVerifyFore		Black
 *QuitVerifyFont		"StringEncoding=UTF-8:xft:*-10"
 *QuitVerifyButtonFont	"StringEncoding=UTF-8:xft:*-10:bold"
 *QuitVerifyLine		center
