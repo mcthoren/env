@@ -25,10 +25,11 @@ Style "*"	HilightFore "#bebebe"
 Style "*"	HilightBack "#006090"
 
 # styles for various Fvwm modules:
-Style "Fvwm*"       NoTitle,  Sticky, WindowListSkip
-Style "Fvwm*"       BorderWidth 2, CirculateSkipIcon, CirculateSkip
-Style "FvwmPager"   StaysOnTop
-Style "FvwmButtons" Icon toolbox.xpm, ClickToFocus
+Style "Fvwm*"		NoTitle,  Sticky, WindowListSkip
+Style "Fvwm*"		BorderWidth 2, CirculateSkipIcon, CirculateSkip
+Style "FvwmPager"	StaysOnTop
+Style "XClock"		StaysOnTop
+Style "FvwmButtons"	Icon toolbox.xpm, ClickToFocus
 
 # styles for your common terminal emulator programs:
 AddToDecor terms
@@ -82,7 +83,8 @@ AddToMenu RootMenu	"Root Menu"	Title
 AddToMenu Window-Ops	"&Move%mini.move.xpm%"			Move
 +			"&Resize%mini.resize.xpm%"		Resize
 +			"R&aise%mini.raise.xpm%"		Raise
-+			"&Staytop%mini.stick.xpm%"		WindowStyle StaysOnTop
++			"&Staytop%mini.stickpressed.xpm%"	WindowStyle StaysOnTop
++			"&Staysput%mini.stick.xpm%"		WindowStyle StaysPut
 +			"&Lower%mini.lower.xpm%"		Lower
 +			"(De)&Iconify%mini.iconify.xpm%"	Iconify
 +			"(Un)&Stick%mini.stick2.xpm%"		Stick
