@@ -31,7 +31,10 @@ setglobal fenc=utf-8
 " argh. hate help.
 map <f1> <nop>
 inoremap <f1> <nop>
+
+" turn syntax off. but if it's on, it should be for a dark bg.
 syntax off
+set bg=dark
 
 " Real tab chars.
 set noexpandtab
