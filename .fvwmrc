@@ -164,7 +164,7 @@ Key Prior	A	C	Desk +1
 *FvwmButtonsFont	"StringEncoding=UTF-8:xft:*-10"
 *FvwmButtonsGeometry	176x75-1-1
 *FvwmButtonsBack	black
-*FvwmButtons(2x2 Frame 1 Swallow(UseOld,NoHints,Respawn) "xload" `Exec exec xload -bg "#000000" -fg blue -hl red -update 2 -nolabel`)
+*FvwmButtons(2x2 Frame 1 Swallow(UseOld,NoHints,Respawn) "xload" `Exec exec xload`)
 *FvwmButtons(2x2 Frame 2 Swallow(UseOld) "FvwmPager" "Module FvwmPager * *")
 
 # pager
