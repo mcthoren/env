@@ -78,7 +78,6 @@ AddToMenu RootMenu	"Root Menu"	Title
 +			"Window-Ops"	Popup			Window-Ops
 +			""		Nop
 +			"Restart Fvwm%mini.refresh.xpm%"	Restart
-+			"Exit"		Module			FvwmForm QuitVerify
 
 AddToMenu Window-Ops	"&Move%mini.move.xpm%"			Move
 +			"&Resize%mini.resize.xpm%"		Resize
@@ -173,15 +172,3 @@ Key Prior	A	C	Desk +1
 *FvwmPagerFore		white
 *FvwmPagerHilight	#2d2d2d
 *FvwmPagerSmallFont	"StringEncoding=UTF-8:xft:luxi-4"
-
-*QuitVerifyGrabServer
-*QuitVerifyWarpPointer
-*QuitVerifyFont		"StringEncoding=UTF-8:xft:*-10"
-*QuitVerifyButtonFont	"StringEncoding=UTF-8:xft:*-10:bold"
-*QuitVerifyLine		center
-*QuitVerifyText		"Do you really want to exit FVWM?"
-*QuitVerifyLine		expand
-*QuitVerifyButton	quit	" Exit "
-*QuitVerifyCommand	Quit
-*QuitVerifyButton	quit	"Cancel"
-*QuitVerifyCommand	Nop
