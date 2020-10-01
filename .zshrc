@@ -55,8 +55,8 @@ laser () { for i in $@; do awk '{printf "%s\r\n", $0}' $i | iconv -f  UTF-8 -t c
 laserps () { for i in $@; do awk '{printf "%s\r\n", $0}' $i | iconv -f  UTF-8 -t  ISO-8859-1 | a2ps; done; }
 
 PS1="[%n@%m %1~]$ "
-EDITOR=vi
 GIT_EDITOR=vi
+export EDITOR=vi
 export LYNX_CFG=~/lynx.cfg
 export LC_CTYPE="en_US.UTF-8"
 export TOG_COLORS=1
