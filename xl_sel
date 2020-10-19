@@ -5,8 +5,8 @@ NUM=$(($RANDOM%5));
 HOST_N="$(hostname -s)"
 
 [[ "${HOST_N}" == "ep117" ]] && NUM=22
-[[ "${HOST_N}" == "iva" ]] && NUM=65
-[[ "${HOST_N}" == "bolt" ]] && NUM=65
+[[ "${HOST_N}" == "iva" ]] && NUM=64
+[[ "${HOST_N}" == "bolt" ]] && NUM=64
 [[ "${HOST_N}" == "socket" ]] && NUM=64
 
 ((NUM==0)) && xlock -mode bug
@@ -28,7 +28,6 @@ HOST_N="$(hostname -s)"
 
 ((NUM==63)) && dm-tool lock
 ((NUM==64)) && slock
-((NUM==65)) && pkill -SIGUSR1 xidle
 
 ((NUM==98)) && echo "shell test"
 ((NUM==99)) && {
