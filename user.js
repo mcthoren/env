@@ -60,3 +60,5 @@ user_pref("font.name.monospace.x-unicode", "Noto Sans UI");
 user_pref("font.name.sans-serif.x-unicode", "Noto Sans");
 user_pref("font.name.serif.x-unicode", "Noto Serif");
 user_pref("font.name.serif.x-western", "DejaVu Serif");
+user_pref("mousewheel.with_alt.action", 3);
+user_pref("mousewheel.with_control.action", 1);
