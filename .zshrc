@@ -59,6 +59,7 @@ GIT_EDITOR=vi
 export EDITOR=vi
 export LYNX_CFG=~/lynx.cfg
 export LC_CTYPE="en_US.UTF-8"
+export LANG="en_US.UTF-8"
 export TOG_COLORS=1
 
 # http://tldp.org/HOWTO/Xterm-Title.html
