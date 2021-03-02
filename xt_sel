@@ -1,6 +1,8 @@
 #!/usr/local/bin/zsh
 
-colors=(\#00e000 DeepSkyBlue DeepSkyBlue1 DeepSkyBlue2 cyan LimeGreen darkturquoise \#00a0ff MediumSpringGreen SpringGreen mediumturquoise skyblue springgreen turquoise green1 green2 green3)
+# colors=(\#00e000 DeepSkyBlue DeepSkyBlue1 DeepSkyBlue2 cyan LimeGreen darkturquoise \#00a0ff MediumSpringGreen SpringGreen mediumturquoise skyblue springgreen turquoise green1 green2 green3)
+
+colors=(cyan green1)
 
 xt_sel () {
 
