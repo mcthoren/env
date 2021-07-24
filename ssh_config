@@ -1,14 +1,14 @@
-# ControlMaster auto
-# ControlPath ~/.ssh/mux-%r@%h:%p
+# ControlMaster		auto
+# ControlPath		~/.ssh/mux-%r@%h:%p
 
-# TCPKeepAlive yes
-# ServerAliveInterval 120
-# ForwardAgent	yes
-HashKnownHosts	yes
-VisualHostKey	yes
-UpdateHostKeys  yes
+# TCPKeepAlive		yes
+# ServerAliveInterval	120
+# ForwardAgent		yes
 
-HostKeyAlgorithms ^ssh-ed25519
+HashKnownHosts		yes
+VisualHostKey		yes
+UpdateHostKeys		yes
+HostKeyAlgorithms	^ssh-ed25519
 
 Host github.com
 	User git
