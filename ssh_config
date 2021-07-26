@@ -1,8 +1,8 @@
 # ControlMaster		auto
 # ControlPath		~/.ssh/mux-%r@%h:%p
 
-# TCPKeepAlive		yes
-# ServerAliveInterval	120
+# ServerAliveInterval	8
+# ServerAliveCountMax	64
 # ForwardAgent		yes
 
 HashKnownHosts		yes
