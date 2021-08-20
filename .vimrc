@@ -34,8 +34,8 @@ set noswapfile
 map <f1> <nop>
 inoremap <f1> <nop>
 
-" turn syntax off. but if it's on, it should be for a dark bg.
-syntax off
+" i got old. turn syntax back on.
+syntax on
 set bg=dark
 
 " Real tab chars.
