@@ -1,3 +1,5 @@
 keycode 113 = Multi_key
 keycode 117 = Multi_key
 keycode 22 = BackSpace BackSpace BackSpace BackSpace BackSpace BackSpace
+keycode 234 = Prior
+keycode 233 = Next
