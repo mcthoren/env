@@ -1,4 +1,4 @@
-!xterm*scrollBar:	true
+xterm*scrollBar:	false
 xterm*foreground:	#0080ff
 xterm*background:	black
 xterm*saveLines:	1024
