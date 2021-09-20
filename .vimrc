@@ -61,3 +61,5 @@ map <f5> <Esc>:!aspell --lang=en -c %<CR>
 map <f6> <Esc>:!aspell --lang=de -c %<CR> 
 map <f7> <Esc>:!aspell --lang=en --mode=tex -c %<CR> 
 map <f8> <Esc>:!aspell --lang=de --mode=tex -c %<CR> 
+map <f9> <Esc>:set syn=sh<CR>
+map <f10> <Esc>:set syn=gnuplot<CR>
