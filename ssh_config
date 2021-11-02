@@ -8,8 +8,19 @@
 HashKnownHosts		yes
 VisualHostKey		yes
 UpdateHostKeys		yes
+StrictHostKeyChecking	yes
 HostKeyAlgorithms	^ssh-ed25519
 
 Host github.com
 	User git
 	IdentityFile ~/.ssh/github
+
+# proxy jump example
+Host jumpy example
+	HostName jumpy.external.facing.box
+	User pickles
+
+Host behind-nat-or-sth
+	HostName stupid.internal.box
+	ProxyJump jumpy
+	User wobbles
