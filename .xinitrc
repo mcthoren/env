@@ -17,4 +17,8 @@ xidle -program ~/xl_sel -timeout 256 &
 	xinput --set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" -0.5
 }
 
-exec zsh -c "fvwm2 |& logger -t fvwm2"
+# be sure to put the following line in /etc/syslog.conf:
+# local0.info /var/log/fvwmlog
+# and a coresponding line in /etc/newsyslog.conf
+# and to touch /var/log/fvwmlog, and to rcctl restart syslogd
+exec zsh -c 'fvwm2 |& logger -p local0.info -t "${$}"'
