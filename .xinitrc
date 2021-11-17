@@ -7,7 +7,7 @@ xset s 256
 
 xmodmap ~/.xmodmaprc.`hostname -s`
 
-/usr/local/bin/xplanet -gmtlabel -projection rectangular -date_format '%F %T %Z' &
+/home/ghz/scripts/earth_bg -n &
 
 xclock -geometry 190x16+27+8 -strftime ' %F %T %Z' &
 
