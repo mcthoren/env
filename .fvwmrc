@@ -65,9 +65,12 @@ Mouse 5 A	C	Desk 1
 Mouse 4 T	N	Next-and-Goto-Deski
 Mouse 5 T	N	Next-and-Goto-Desko
 
+# nuke focus stealing functions from orbit
+DestroyFunc EWMHActivateWindowFunc
+DestroyFunc UrgencyFunc
+
 # initialization functions
 AddToFunc InitFunction		"I" Module FvwmButtons
-
 AddToFunc RestartFunction	"I" Module FvwmButtons
 
 # menus
