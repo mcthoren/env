@@ -34,6 +34,7 @@ user_pref("browser.newtabpage.activity-stream.section.highlights.includeVisited"
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
 user_pref("browser.privatebrowsing.autostart", true);
 user_pref("browser.search.suggest.enabled", false);
+user_pref("browser.quitShortcut.disabled", true);
 user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-fixed-list\":[],\"nav-bar\":[\"back-button\",\"forward-button\",\"stop-reload-button\",\"urlbar-container\",\"bookmarks-menu-button\",\"characterencoding-button\",\"ublock0_raymondhill_net-browser-action\"],\"toolbar-menubar\":[\"menubar-items\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"PersonalToolbar\":[\"personal-bookmarks\"]},\"seen\":[\"developer-button\",\"ublock0_raymondhill_net-browser-action\"],\"dirtyAreaCache\":[\"nav-bar\",\"toolbar-menubar\",\"TabsToolbar\",\"PersonalToolbar\"],\"currentVersion\":16,\"newElementCount\":5}");
 user_pref("browser.urlbar.placeholderName", "DuckDuckGo");
 user_pref("extensions.privatebrowsing.notification", true);
