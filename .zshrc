@@ -44,6 +44,9 @@ alias sc="~/scripts/sc"
 alias ff="ulimit -d 4096000; ulimit -c 1; firefox -P"
 alias cl="cal `date +%Y`"
 alias ts="date -u +%FT%T%Z"
+alias wxb="wget -qO - 'https://wttr.in/Augsburg'"
+alias wx="ansiweather -l augsburg -s true"
+alias wxf="ansiweather -l augsburg -s true -f 3"
 rw () { cat /usr/share/dict/words |perl -e 'rand $. < 1 && ($x = $_) while <>; print $x' ;}
 rl () { perl -e 'rand $. < 1 && ($x = $_) while <>; print $x' ;}
 tag () { echo -en "$(hostname -s) $(ts) $(rw)\n"; }
