@@ -7,10 +7,10 @@ DeskTopSize 5x5
 
 ColormapFocus FollowsMouse
 
-Style	  "*"	Font		"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-11:encoding=iso10646-1"
-Style	  "*"	IconFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-10:encoding=iso10646-1"
-MenuStyle "*"	Font		"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-11:encoding=iso10646-1"
-MenuStyle "*"	TitleFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-12:encoding=iso10646-1"
+Style	  "*"	Font		"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-10:encoding=iso10646-1"
+Style	  "*"	IconFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-9:encoding=iso10646-1"
+MenuStyle "*"	Font		"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-10:encoding=iso10646-1"
+MenuStyle "*"	TitleFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-11:encoding=iso10646-1"
 
 # default styles
 Style "*"	BorderWidth 7, HandleWidth 7
@@ -163,14 +163,14 @@ Key Next	A	C	Desk -1
 Key Prior	A	C	Desk +1
  
 # FvwmButtons
-*FvwmButtonsFont	"StringEncoding=UTF-8:xft:*-10"
+*FvwmButtonsFont	"StringEncoding=UTF-8:xft:*-9"
 *FvwmButtonsGeometry	176x75-1-1
 *FvwmButtonsBack	black
 *FvwmButtons(2x2 Frame 1 Swallow(UseOld,NoHints,Respawn) "xload" `Exec exec xload`)
 *FvwmButtons(2x2 Frame 2 Swallow(UseOld) "FvwmPager" "Module FvwmPager * *")
 
 # pager
-*FvwmPagerFont		"StringEncoding=UTF-8:xft:*-8"
+*FvwmPagerFont		"StringEncoding=UTF-8:xft:*-7"
 *FvwmPagerBack		darkblue
 *FvwmPagerFore		white
 *FvwmPagerHilight	#2d2d2d

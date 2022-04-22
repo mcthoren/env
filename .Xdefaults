@@ -22,7 +22,7 @@ xclock*update:		1
 xclock*padding:		0
 xclock*analog:		false
 xclock*render:		true
-xclock*face:		DejaVu Sans Condensed-11
+xclock*face:		DejaVu Sans Condensed-9
 
 ! HAHA! xlock doesn't have xft support ><
 XLock.bug.eyes:		on
