@@ -7,10 +7,10 @@ DeskTopSize 5x5
 
 ColormapFocus FollowsMouse
 
-Style	  "*"	Font		"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-10:encoding=iso10646-1"
-Style	  "*"	IconFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-9:encoding=iso10646-1"
-MenuStyle "*"	Font		"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-10:encoding=iso10646-1"
-MenuStyle "*"	TitleFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-11:encoding=iso10646-1"
+Style	  "*"	Font		"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-9:encoding=iso10646-1"
+Style	  "*"	IconFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-8:encoding=iso10646-1"
+MenuStyle "*"	Font		"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-9:encoding=iso10646-1"
+MenuStyle "*"	TitleFont	"StringEncoding=UTF-8:xft:DejaVu Sans Condensed-10:encoding=iso10646-1"
 
 # default styles
 Style "*"	BorderWidth 7, HandleWidth 7
