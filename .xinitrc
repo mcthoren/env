@@ -14,7 +14,7 @@ xclock -geometry 190x16+27+8 -strftime ' %F %T %Z' &
 xidle -program ~/xl_sel -timeout 256 &
 
 [ `hostname -s` = "socket" ] && {
-	xinput --set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" -0.5
+	xinput --set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" 0.3
 }
 
 # be sure to put the following line in /etc/syslog.conf:
