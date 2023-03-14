@@ -7,7 +7,7 @@ xset s 600
 
 xmodmap ~/.xmodmaprc.`hostname -s`
 
-/home/ghz/scripts/earth_bg -n &
+"${HOME}/scripts/earth_bg -n" &
 
 xclock -geometry 190x16+27+8 -strftime ' %F %T %Z' &
 
