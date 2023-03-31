@@ -1,6 +1,7 @@
 #!/usr/local/bin/zsh
 
 to_link=(.fvwmrc\
+ lynx.cfg\
  .tmux.conf\
  .vimrc\
  .XCompose\
