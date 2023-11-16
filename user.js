@@ -63,3 +63,4 @@ user_pref("font.name.serif.x-unicode", "Noto Serif");
 user_pref("font.name.serif.x-western", "DejaVu Serif");
 user_pref("mousewheel.with_alt.action", 3);
 user_pref("mousewheel.with_control.action", 1);
+user_pref("pdfjs.disableFontFace", true);
