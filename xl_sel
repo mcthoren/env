@@ -8,6 +8,7 @@ HOST_N="$(hostname -s)"
 [[ "${HOST_N}" == "iva" ]] && NUM=64
 [[ "${HOST_N}" == "bolt" ]] && NUM=64
 [[ "${HOST_N}" == "socket" ]] && NUM=64
+[[ "${HOST_N}" == "sand" ]] && NUM=64
 
 ((NUM==0)) && xlock -mode bug
 ((NUM==1)) && xlock -mode life 
