@@ -1,23 +1,27 @@
 #!/usr/local/bin/zsh
 
 colors=(cyan green1)
+HOST_N="$(hostname -s)"
 
 xt_sel () {
 
 	NUM=$(($RANDOM%${#colors}+1));
 	COLOR=$colors[$NUM]
+	AA=0
+	# anti aliased fonts for the laptosp with resolutions to make it look nice.
+	[ "${HOST_N}" = "dust" -o "${HOST_N}" = sand ] && AA=1
 
 	(( $# == 0 )) &&
 		{
-			xterm -fg $COLOR &
-			# xterm -fa "*" -fs 11 -fg $COLOR &
+			[ "${AA}" = 1 ] || xterm -fg $COLOR &
+			[ "${AA}" = 1 ] && xterm -fa "*" -fs 7 -fg $COLOR &
 		} || {
-			xterm -fg $COLOR -geometry $1 &
-			# xterm -fa "*" -fs 11 -fg $COLOR -geometry $@ &
+			[ "${AA}" = 1 ] || xterm -fg $COLOR -geometry $1 &
+			[ "${AA}" = 1 ] && xterm -fa "*" -fs 7 -fg $COLOR -geometry $@ &
 		}
 }
 
-if [ `hostname -s` = "socket" ]; then
+if [ "${HOST_N}" = "socket" ]; then
 	LGEOM="111x56+0+0"
 	RGEOM="111x56-0+0"
 	BL="111x26+0-0"
@@ -25,6 +29,14 @@ if [ `hostname -s` = "socket" ]; then
 	TL="111x26+0+0"
 	TR="111x26-0+0"
 	FULL="222x55+0+0"
+elif [ "${HOST_N}" = "dust" -o "${HOST_N}" = sand ]; then
+	LGEOM="105x54+0+0"
+	RGEOM="105x54-0+0"
+	BL="105x27+0-0"
+	BR="105x27-0-0"
+	TL="105x26+0+0"
+	TR="105x26-0+0"
+	FULL="210x54+0+0"
 else
 	LGEOM="111x56+0+0"
 	RGEOM="111x56-0+0"
