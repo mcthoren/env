@@ -29,7 +29,7 @@ if [ "${HOST_N}" = "socket" ]; then
 	TL="111x26+0+0"
 	TR="111x26-0+0"
 	FULL="222x55+0+0"
-elif [ "${HOST_N}" = "dust" -o "${HOST_N}" = sand ]; then
+elif [ "${HOST_N}" = "dust" -o "${HOST_N}" = "sand" ]; then
 	LGEOM="105x54+0+0"
 	RGEOM="105x54-0+0"
 	BL="105x27+0-0"
