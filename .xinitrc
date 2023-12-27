@@ -1,4 +1,5 @@
 cd 
+HOST_N="$(hostname -s)"
 
 export LC_CTYPE="en_US.UTF-8"
 xset r rate 150 50
@@ -9,7 +10,11 @@ xmodmap ~/.xmodmaprc.`hostname -s`
 
 "${HOME}"/scripts/earth_bg -n &
 
-xclock -geometry 190x16+27+8 -strftime ' %F %T %Z' &
+if  [ "${HOST_N}" = "dust" -o "${HOST_N}" = "sand" ]; then
+	xclock -geometry 192x22+33+9 -strftime ' %F %T %Z' &
+else
+	xclock -geometry 190x16+27+8 -strftime ' %F %T %Z' &
+fi
 
 xidle -program ~/xl_sel -timeout 512 &
 
