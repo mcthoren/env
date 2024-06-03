@@ -6,7 +6,7 @@ HOST_N="$(hostname -s)"
 
 [[ "${HOST_N}" == "ep117" ]] && NUM=22
 [[ "${HOST_N}" == "iva" ]] && NUM=64
-[[ "${HOST_N}" == "bolt" ]] && NUM=64
+[[ "${HOST_N}" == "bolt" ]] && NUM=$(( $RANDOM % 10));
 [[ "${HOST_N}" == "socket" ]] && NUM=64
 [[ "${HOST_N}" == "sand" ]] && NUM=64
 [[ "${HOST_N}" == "dust" ]] && NUM=64
