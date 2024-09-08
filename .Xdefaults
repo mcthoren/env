@@ -27,7 +27,8 @@ xclock*face:		DejaVu Sans Condensed-9
 xmem*background:	black
 xmem*foreground:	green
 xmem*highlight:		green
-xmem*update:		1
+xmem*update:		3
+xmem*showLabel:		false
 
 ! HAHA! xlock does not have xft support ><
 XLock.bug.eyes:		on
