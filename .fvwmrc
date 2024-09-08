@@ -164,10 +164,11 @@ Key Prior	A	C	Desk +1
  
 # FvwmButtons
 *FvwmButtonsFont	"StringEncoding=UTF-8:xft:*-9"
-*FvwmButtonsGeometry	176x75-1-1
+*FvwmButtonsGeometry	264x75-1-1
 *FvwmButtonsBack	black
 *FvwmButtons(2x2 Frame 1 Swallow(UseOld,NoHints,Respawn) "xload" `Exec exec xload`)
-*FvwmButtons(2x2 Frame 2 Swallow(UseOld) "FvwmPager" "Module FvwmPager * *")
+*FvwmButtons(2x2 Frame 2 Swallow(UseOld,NoHints,Respawn) "xmem" `Exec exec xmem`)
+*FvwmButtons(2x2 Frame 3 Swallow(UseOld) "FvwmPager" "Module FvwmPager * *")
 
 # pager
 *FvwmPagerFont		"StringEncoding=UTF-8:xft:*-7"
