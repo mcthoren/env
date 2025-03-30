@@ -8,10 +8,10 @@ xset s 600
 
 xmodmap ~/.xmodmaprc.`hostname -s`
 
-"${HOME}"/scripts/earth_bg -n &
+"${HOME}"/scripts/earth_bg &
 
 if  [ "${HOST_N}" = "dust" -o "${HOST_N}" = "sand" ]; then
-	xclock -geometry 192x22+33+9 -strftime ' %F %T %Z' &
+	xclock -geometry 205x22+33+9 -strftime ' %F %TZ' &
 else
 	xclock -geometry 190x16+27+8 -strftime ' %F %T %Z' &
 fi
