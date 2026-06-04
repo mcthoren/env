@@ -41,7 +41,7 @@ alias mpfa='mplayer -cache 32768 -fs -framedrop -af volnorm'
 alias mpfac='mplayer -cache 32768 -fs -framedrop -af volnorm  -vfm ffmpeg -lavdopts lowres=1:fast:skiploopfilter=all -nobps -ni -forceidx -mc 0'
 alias mpfahc='mplayer -cache 32768 -fs -framedrop -af volnorm  -vfm ffmpeg -lavdopts fast:skiploopfilter=all -nobps -ni -forceidx -mc 0'
 alias sc="~/scripts/sc"
-alias ff="ulimit -d 4096000; ulimit -c 1; firefox -P"
+alias ff="ulimit -d 4096000; ulimit -c 1; MOZ_ACCELERATED=1 firefox -P"
 alias cl="cal `date +%Y`"
 alias ts="date -u +%FT%T%Z"
 alias wxb="wget -qO - 'https://wttr.in/Berlin'"
