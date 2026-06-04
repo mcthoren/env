@@ -7,6 +7,7 @@ xterm*cursorBlink:	true
 xterm*cursorOffTime:	300
 xterm*cursorOnTime:	300
 xterm*alwaysHighlight:	true
+xterm*charClass:	33-36:48,43-44:48,47:48,59:48,61:48,94:48
 
 xload*foreground:	blue
 xload*background:	black
