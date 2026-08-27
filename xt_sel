@@ -29,7 +29,7 @@ if [ "${HOST_N}" = "socket" ]; then
 	TL="111x26+0+0"
 	TR="111x26-0+0"
 	FULL="222x55+0+0"
-elif [ "${HOST_N}" = "dust" -o "${HOST_N}" = "sand" -o "${HOST_N}" = "bolt" ]; then
+elif [ "${HOST_N}" = "dust" -o "${HOST_N}" = "sand" ]; then
 	LGEOM="105x54+0+0"
 	RGEOM="105x54-0+0"
 	BL="105x27+0-0"
@@ -37,6 +37,14 @@ elif [ "${HOST_N}" = "dust" -o "${HOST_N}" = "sand" -o "${HOST_N}" = "bolt" ]; t
 	TL="105x26+0+0"
 	TR="105x26-0+0"
 	FULL="210x54+0+0"
+elif [ "${HOST_N}" = "bolt" ]; then
+	LGEOM="94x49+0+0"
+	RGEOM="95x49-0+0"
+	BL="95x24+0-0"
+	BR="94x24-0-0"
+	TL="95x24+0+0"
+	TR="94x24-0+0"
+	FULL="190x49+0+0"
 else
 	LGEOM="111x56+0+0"
 	RGEOM="111x56-0+0"
