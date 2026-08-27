@@ -12,6 +12,8 @@ xmodmap ~/.xmodmaprc.`hostname -s`
 
 if  [ "${HOST_N}" = "dust" -o "${HOST_N}" = "sand" ]; then
 	xclock -geometry 205x22+33+9 -strftime ' %F %TZ' &
+elif  [ "${HOST_N}" = "bolt" ]; then
+	xclock -face "DejaVu Sans Condensed-7" -geometry 210x19+32+9 -strftime ' %F %T %Z' &
 else
 	xclock -geometry 190x16+27+8 -strftime ' %F %T %Z' &
 fi
